@@ -2,7 +2,7 @@
 #ifndef Color
 #define Color
 #include <iostream>
-using namespace std;
+
 
 class Colore
 {
@@ -14,10 +14,11 @@ public:
 	Colore();
 	~Colore();
 	Colore(bool noir, bool rouge);
-	
-	void affichage ();
-	bool IsBlack ();
+	bool isBlack ();
 	bool isRed ();
+	bool isVide ();
+	void affichage ();
+	
 	
 	
 
@@ -25,6 +26,10 @@ public:
 
 };
 
+Colore::~Colore()
+{
+
+}
 
 Colore::Colore()
 {
@@ -39,6 +44,56 @@ Colore::Colore(bool noir,bool rouge)
 	estRouge = rouge;
 }
 
+
+
+bool Colore::isRed ()
+{
+	if (estRouge && !estNoir)
+	{
+		return true;
+	}
+	else { return false; }
+
+}
+
+
+bool Colore::isBlack ()
+{
+	if (!estRouge && estNoir)
+	{
+		return true;
+	}
+	else { return false; }
+}
+
+
+bool Colore::isVide ()
+{
+	if ((!estRouge && !estNoir)|| (estRouge && estNoir))
+	{
+		return true;
+	}
+	else { return false; }
+}
+
+void Colore::affichage ()
+{
+	if (isBlack())
+	{
+		std::cout<<"N";
+	}
+	else { 
+		if (isRed())
+		{
+			std::cout<<"R";
+		}
+		else 
+		{
+			std::cout<<"0";
+		}
+	}
+	
+}
 
 
 #endif       
