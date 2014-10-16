@@ -10,6 +10,7 @@
 
 class Pion 
 {
+public :
 protected:
 	Colore color ();
 };
