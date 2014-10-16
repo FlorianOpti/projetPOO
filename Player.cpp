@@ -1,12 +1,12 @@
-#ifndef Player
-#define Player
+#ifndef Player_
+#define Player_
 
 #include "Color.cpp"
 #include<iostream>
 using namespace std;
 
 
-class Playere
+class Player
 {
 protected:
 	Colore* couleur;
@@ -14,30 +14,34 @@ protected:
 	
 public:
 
-	~Playere(){}
+	~Player(){}
 
 
-	Playere(){
+	Player(){
 		couleur = new Colore();
 		nbPion = 0;
 	
 	}
-	Playere(Colore* c){
+	Player(Colore* c){
 		couleur = c;
 		nbPion = 9;
 	}
 	
 	void affichage(){
-		cout << "joueur de couleur "; couleur.affichage();
+		cout << "joueur de couleur ";
+		couleur->affichage();
 		cout << " avec nbPion = "<< nbPion << endl;
 	}
 
 };
 
 int main(){
-	Playere a(new Colore(1,0)), b(new Colore(0,1));
+	Player a(new Colore(1,0)), b(new Colore(0,1));
+	Playere* c = new Playere();
+	//Player c(); marche pas trop ca j'ai l'impression
 	a.affichage();
 	b.affichage();
+	c->affichage();
 	return 0;
 }
 
