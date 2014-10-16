@@ -1,6 +1,6 @@
 
-#ifndef Color
-#define Color
+#ifndef Color_
+#define Color_
 #include <iostream>
 
 

@@ -1,6 +1,6 @@
 
-#ifndef Matrice
-#define Matrice
+#ifndef Matrice_
+#define Matrice_
 
 #include "Pion.cpp"
 #include "Color.cpp"
@@ -13,7 +13,7 @@ class Matrice
 public:
 	Matrice();
 	~Matrice();
-	pion*[24] matr;
+	Pion*[24] matr;
 public :
 	bool LignePleine (int num_ligne,Colore color);
 };
