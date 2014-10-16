@@ -22,7 +22,12 @@ public:
 		matriceH = new Matrice();
 		matriceV = new Matrice();
 	}	
-	
+	depRight(Pion p){
+		// si on peut se deplacer a droite ( une case a droite et innocuppée)
+	}
+	depLeft(Pion p);
+	depUp(Pion p);
+	depDown(Pion p);
 };
 
 
