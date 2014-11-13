@@ -45,5 +45,8 @@ int main(){
 }
 
 #endif
-
-
+/*
+git pull
+git commit -am "truc"
+git push
+*/
