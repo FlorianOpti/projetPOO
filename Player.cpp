@@ -1,5 +1,5 @@
-#ifndef _Player_
-#define _Player_
+#ifndef Player_
+#define Player_
 
 #include "Color.cpp"
 #include<iostream>
@@ -9,7 +9,7 @@ using namespace std;
 class Player
 {
 protected:
-	Colore* couleur;
+	Colore couleur;
 	int nbPion;
 	
 public:
@@ -18,27 +18,26 @@ public:
 
 
 	Player(){
-		couleur = new Colore();
+		couleur = *(new Colore());
 		nbPion = 0;
 	
 	}
-	Player(Colore* c){
+	Player(Colore c){
 		couleur = c;
 		nbPion = 9;
 	}
 	
 	void affichage(){
 		cout << "joueur de couleur ";
-		couleur->affichage();
+		couleur.affichage();
 		cout << " avec nbPion = "<< nbPion << endl;
 	}
 
 };
 
 int main(){
-	Player a(new Colore(1,0)), b(new Colore(0,1));
+	Player a(*(new Colore(1,0))), b(*(new Colore(0,1)));
 	Player* c = new Player();
-	//Player c(); marche pas trop ca j'ai l'impression
 	a.affichage();
 	b.affichage();
 	c->affichage();
