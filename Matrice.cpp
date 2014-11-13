@@ -15,9 +15,16 @@ public:
 	~Matrice();
 	Pion* matr[24];
 	bool setPion (Pion *pion, int position );
+	bool estVide (int position);
 public :
 	bool LignePleine (int num_ligne,Colore color);
 };
+
+bool Matrice::estVide(int position)
+{
+	return matr[position]->getColore().isVide();
+}
+
 
 
 bool Matrice::setPion(Pion *pion,int position)
