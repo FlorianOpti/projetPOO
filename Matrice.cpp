@@ -14,10 +14,22 @@ public:
 	Matrice();
 	~Matrice();
 	Pion* matr[24];
+	bool setPion (Pion *pion, int position );
 public :
 	bool LignePleine (int num_ligne,Colore color);
 };
 
+
+bool Matrice::setPion(Pion *pion,int position)
+{
+	if(matr[position]->getColore().isVide())
+		{
+			delete matr[position];
+			matr[position] = pion;
+			return true;
+		}
+	else {return false;}
+}
 
 
 Matrice::Matrice()
@@ -37,11 +49,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 {
 	if (color.isBlack())
 	{
-		if (matr[num_Ligne*3].getColore.isBlack())
+		if (matr[num_Ligne*3]->getColore().isBlack())
 		{
-			if (matr[num_Ligne*3+1].getColore.isBlack())
+			if (matr[num_Ligne*3+1]->getColore().isBlack())
 			{
-				if (matr[num_Ligne*3+2].getColore.isBlack())
+				if (matr[num_Ligne*3+2]->getColore().isBlack())
 				{
 					return true; 
 				}
@@ -51,11 +63,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 	}
 	if (color.isRed())
 	{
-		if (matr[num_Ligne*3].getColore.isRed())
+		if (matr[num_Ligne*3]->getColore().isRed())
 		{
-			if (matr[num_Ligne*3+1].getColore.isRed())
+			if (matr[num_Ligne*3+1]->getColore().isRed())
 			{
-				if (matr[num_Ligne*3+2].getColore.isRed())
+				if (matr[num_Ligne*3+2]->getColore().isRed())
 				{
 					return true; 
 				}
@@ -65,11 +77,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 	}
 	if (color.isVide())
 	{
-		if (matr[num_Ligne*3].getColore.isVide())
+		if (matr[num_Ligne*3]->getColore().isVide())
 		{
-			if (matr[num_Ligne*3+1].getColore.isVide())
+			if (matr[num_Ligne*3+1]->getColore().isVide())
 			{
-				if (matr[num_Ligne*3+2].getColore.isVide())
+				if (matr[num_Ligne*3+2]->getColore().isVide())
 				{
 					return true; 
 				}
@@ -77,8 +89,7 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 		}
 		return false;
 	}
+	return false;
 }
-
-
 
 #endif

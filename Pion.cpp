@@ -15,10 +15,17 @@ public :
 	Pion(bool noir, bool rouge);
 	~Pion();
 	Colore getColore();
+	void affichage();
+	
 protected:
 	Colore color;
 };
 
+
+void Pion::affichage()
+{
+	color.affichage();
+}
 
 Colore Pion::getColore()
 {
@@ -27,12 +34,12 @@ Colore Pion::getColore()
 
 Pion::Pion()
 {
-	//
+	color = *(new Colore(false,false));
 }
 
 Pion::Pion(bool noir, bool rouge)
 {
-	//
+	color = *(new Colore(noir,rouge));
 }
 
 Pion::~Pion()
@@ -41,10 +48,4 @@ Pion::~Pion()
 }
 
 
-
-
-
-
-
-
-#endif
+#endif   
