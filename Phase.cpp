@@ -1,5 +1,5 @@
-#ifndef Phase
-#define Phase
+#ifndef _Phase_
+#define _Phase_
 
 #include "Game.cpp"
 

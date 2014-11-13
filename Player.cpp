@@ -1,5 +1,5 @@
-#ifndef Player_
-#define Player_
+#ifndef _Player_
+#define _Player_
 
 #include "Color.cpp"
 #include<iostream>
@@ -37,7 +37,7 @@ public:
 
 int main(){
 	Player a(new Colore(1,0)), b(new Colore(0,1));
-	Playere* c = new Playere();
+	Player* c = new Player();
 	//Player c(); marche pas trop ca j'ai l'impression
 	a.affichage();
 	b.affichage();

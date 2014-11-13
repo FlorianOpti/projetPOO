@@ -1,6 +1,6 @@
 
-#ifndef Color_
-#define Color_
+#ifndef _Color_
+#define _Color_
 #include <iostream>
 
 
@@ -25,6 +25,8 @@ public:
 	
 
 };
+
+
 
 Colore::~Colore()
 {

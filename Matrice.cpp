@@ -5,7 +5,7 @@
 #include "Pion.cpp"
 #include "Color.cpp"
 
-
+//Gerer les constructeur de Pion
 
 
 class Matrice 
@@ -13,7 +13,7 @@ class Matrice
 public:
 	Matrice();
 	~Matrice();
-	Pion*[24] matr;
+	Pion* matr[24];
 public :
 	bool LignePleine (int num_ligne,Colore color);
 };
@@ -22,7 +22,8 @@ public :
 
 Matrice::Matrice()
 {
-	while(i(0);i<8*3;++i)
+	int i;
+	for(i=0; i<24; ++i)
 	{
 		matr[i] = new Pion();
 	}
@@ -36,11 +37,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 {
 	if (color.isBlack())
 	{
-		if (matr[num_Ligne*3].color.isBlack())
+		if (matr[num_Ligne*3].getColore.isBlack())
 		{
-			if (matr[num_Ligne*3+1].color.isBlack())
+			if (matr[num_Ligne*3+1].getColore.isBlack())
 			{
-				if (matr[num_Ligne*3+2].color.isBlack())
+				if (matr[num_Ligne*3+2].getColore.isBlack())
 				{
 					return true; 
 				}
@@ -50,11 +51,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 	}
 	if (color.isRed())
 	{
-		if (matr[num_Ligne*3].color.isRed())
+		if (matr[num_Ligne*3].getColore.isRed())
 		{
-			if (matr[num_Ligne*3+1].color.isRed())
+			if (matr[num_Ligne*3+1].getColore.isRed())
 			{
-				if (matr[num_Ligne*3+2].color.isRed())
+				if (matr[num_Ligne*3+2].getColore.isRed())
 				{
 					return true; 
 				}
@@ -64,11 +65,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 	}
 	if (color.isVide())
 	{
-		if (matr[num_Ligne*3].color.isVide())
+		if (matr[num_Ligne*3].getColore.isVide())
 		{
-			if (matr[num_Ligne*3+1].color.isVide())
+			if (matr[num_Ligne*3+1].getColore.isVide())
 			{
-				if (matr[num_Ligne*3+2].color.isVide())
+				if (matr[num_Ligne*3+2].getColore.isVide())
 				{
 					return true; 
 				}

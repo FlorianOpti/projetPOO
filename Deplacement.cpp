@@ -1,5 +1,5 @@
-#ifndef Deplacement
-#define Deplacement
+#ifndef _Deplacement_
+#define _Deplacement_
 
 #include "Phase.cpp"
 #include "Game.cpp"

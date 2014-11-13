@@ -1,5 +1,5 @@
-#ifndef Pion_
-#define Pion_
+#ifndef _Pion_
+#define _Pion_
 
 #include "Color.cpp"
 
@@ -14,18 +14,25 @@ public :
 	Pion();
 	Pion(bool noir, bool rouge);
 	~Pion();
+	Colore getColore();
 protected:
 	Colore color;
 };
 
 
+Colore Pion::getColore()
+{
+	return color;
+}
+
 Pion::Pion()
 {
+	//
 }
 
 Pion::Pion(bool noir, bool rouge)
 {
-	color(noir,rouge);
+	//
 }
 
 Pion::~Pion()
