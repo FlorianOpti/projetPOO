@@ -4,6 +4,7 @@
 
 #include "Pion.cpp"
 #include "Color.cpp"
+#include<cassert>
 
 //Gerer les constructeur de Pion
 
@@ -16,10 +17,23 @@ public:
 	Pion* matr[24];
 	bool setPion (Pion *pion, int position );
 	bool estVide (int position);
+	int indice(Pion *pion);
+	Pion* pion(int x);
 public :
 	bool LignePleine (int num_ligne,Colore color);
 };
-
+int Matrice::indice(Pion* pion){
+	for(int i =0; i<24; i++){
+		if ( pion == matr[i]){
+			return i;
+		}
+	}
+	return -1;
+}
+Pion* Matrice::pion(int x){
+	assert(x>-1 && x<24);
+	return matr[x];
+}
 bool Matrice::estVide(int position)
 {
 	return matr[position]->getColore().isVide();

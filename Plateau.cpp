@@ -1,5 +1,5 @@
-#ifndef Plateau
-#define Plateau
+#ifndef Plateau_
+#define Plateau_
 
 #include "Matrice.cpp"
 #include<cmath>
@@ -44,20 +44,11 @@ protected:
 		}
 		return res;
 	}
-	int getRight(int x){
-		int res = x;
-		x++;
-		if( mod(x,3) == 0){
-			return -1;
-		}else{
-			return res+1;
-		}
-	}
+	
 public:
 
-	Plateau();
 	~Plateau();
-	
+
 	
 	Plateau(){
 		matriceH = *(new Matrice());
@@ -72,13 +63,80 @@ public:
 		effectue = effectue and matriceV.setPion(&p, conv(pos));
 		return effectue;
 	}	
-	void depRight(Pion p){
-		// si on peut se deplacer a droite ( une case a droite et innocuppée)
+	
+	int getRight(int x){ // passer le code en matrice horizontale
+		int res = x;
+		x++;
+		if( x%3 == 0){
+			return -1;
+		}else{
+			return res+1;
+		}
 	}
+	int getDown(int x){
+		int res = x;
+		x++;
+		x = conv(x);
+		
+		if( x%3 == 0){
+			return -1;
+		}else{
+			return conv (res+1);
+		}
+		
+	}
+	int getLeft(int x){
+		int res = x;
+		x++;
+		if( x%3 == 1){
+			return -1;
+		}else{
+			return (res-1);
+		}
+	}
+	int getUp(int x){
+		int res = x;
+		x++;
+		x = conv(x);
+		
+		if( x%3 == 1){
+			return -1;
+		}else{
+			return conv (res-1);
+		}
+	}
+	void depRight(Pion pion){
+		// si on peut se deplacer a droite ( une case a droite et innocuppée)
+		int indice = matriceH.indice(&pion);
+		int right = getRight(indice);
+		if(right != -1){
+			Pion* pright = matriceH.pion(right);
+			if(isVide(*pright)){
+				PionV temp = matriceH.pion(right);
+				// sauvegarde du pionvide ou on va bouger
+				
+				matriceH.setPion (&pion, right);
+				matriceH.setPion (temp, indice);
+				
+				matriceV.setPion (&pion, conv(right));
+				matriceV.setPion (temp, conv(indice));
+			}else{
+				std::cout<< " can't go right\n";
+			}
+		}else{
+			std::cout<< " can't go right\n";
+		} 
+	}
+	
 	void depLeft(Pion p);
 	void depUp(Pion p);
 	void depDown(Pion p);
 };
 
-
+int main(){
+	Plateau P = *(new Plateau());
+	
+}
 #endif
+
+
