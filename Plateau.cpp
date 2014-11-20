@@ -128,9 +128,96 @@ public:
 		} 
 	}
 	
-	void depLeft(Pion p);
-	void depUp(Pion p);
-	void depDown(Pion p);
+	void depLeft(Pion p){
+		int indice = matriceH.indice(&pion);
+		int left = getLeft(indice);
+		if(left != -1){
+			Pion* pleft = matriceH.pion(left);
+			if(isVide(*pleft)){
+				PionV temp = matriceH.pion(left);
+				// sauvegarde du pionvide ou on va bouger
+				
+				matriceH.setPion (&pion, left);
+				matriceH.setPion (temp, indice);
+				
+				matriceV.setPion (&pion, conv(left));
+				matriceV.setPion (temp, conv(indice));
+			}else{
+				std::cout<< " can't go left\n";
+			}
+		}else{
+			std::cout<< " can't go left\n";
+		} 
+	}
+	void depUp(Pion p){
+		int indice = matriceH.indice(&pion);
+		int up = getUp(indice);
+		if(up != -1){
+			Pion* pup = matriceH.pion(up);
+			if(isVide(*pup)){
+				PionV temp = matriceH.pion(up);
+				// sauvegarde du pionvide ou on va bouger
+				
+				matriceH.setPion (&pion, up);
+				matriceH.setPion (temp, indice);
+				
+				matriceV.setPion (&pion, conv(up));
+				matriceV.setPion (temp, conv(indice));
+			}else{
+				std::cout<< " can't go up\n";
+			}
+		}else{
+			std::cout<< " can't go up\n";
+		} 
+	}
+	void depDown(Pion p){
+		int indice = matriceH.indice(&pion);
+		int down = getDown(indice);
+		if(down != -1){
+			Pion* pdown = matriceH.pion(down);
+			if(isVide(*pdown)){
+				PionV temp = matriceH.pion(down);
+				// sauvegarde du pionvide ou on va bouger
+				
+				matriceH.setPion (&pion, down);
+				matriceH.setPion (temp, indice);
+				
+				matriceV.setPion (&pion, conv(down));
+				matriceV.setPion (temp, conv(indice));
+			}else{
+				std::cout<< " can't go down\n";
+			}
+		}else{
+			std::cout<< " can't go down\n";
+		} 
+	}
+	
+	//POINTEUR VERS FONCTION !!!
+	
+	/*typedef int(*Fonction)(int);
+	void dep(Pion p, Fonction direction){
+	int indice = matriceH.indice(&pion);
+		int down = direction(indice);
+		if(down != -1){
+			Pion* pdown = matriceH.pion(down);
+			if(isVide(*pdown)){
+				PionV temp = matriceH.pion(down);
+				// sauvegarde du pionvide ou on va bouger
+				
+				matriceH.setPion (&pion, down);
+				matriceH.setPion (temp, indice);
+				
+				matriceV.setPion (&pion, conv(down));
+				matriceV.setPion (temp, conv(indice));
+			}else{
+				std::cout<< " can't go down\n";
+			}
+		}else{
+			std::cout<< " can't go down\n";
+		} 
+	}
+	*/
+	
 };
 
 int main(){
