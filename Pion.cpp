@@ -1,51 +1,24 @@
-#ifndef _Pion_
-#define _Pion_
+
+#ifndef Pion_
+#define Pion_
 
 #include "Color.cpp"
+//#include "PionN.cpp"
 
 
 
-
-
-
-class Pion 
+class Pion
 {
 public :
-	Pion();
-	Pion(bool noir, bool rouge);
-	~Pion();
-	Colore getColore();
-	void affichage();
+	virtual Colore getColore()=0;
+	virtual void affichage()=0;
 	
 protected:
 	Colore color;
 };
 
 
-void Pion::affichage()
-{
-	color.affichage();
-}
 
-Colore Pion::getColore()
-{
-	return color;
-}
-
-Pion::Pion()
-{
-	color = *(new Colore(false,false));
-}
-
-Pion::Pion(bool noir, bool rouge)
-{
-	color = *(new Colore(noir,rouge));
-}
-
-Pion::~Pion()
-{
-
-}
 
 
 #endif   
