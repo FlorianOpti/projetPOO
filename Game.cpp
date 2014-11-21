@@ -54,6 +54,16 @@ public :
 			//}
 		}
 	}
+	Player getJ1(){
+		return joueur1;
+	}
+	Player getJ2(){
+		return joueur2;
+	}
+	Plateau getPlateau(){
+		return plateau;
+	}
+	
 };
 
 #endif

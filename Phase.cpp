@@ -6,12 +6,14 @@
 class Phase //(abstract)
 {
 public:
-	void jouer ();
+	virtual void jouer ();
 protected:
 	Game game;
 
 public : 
-	Phase (Game g) : game(g) {}
+	Phase (Game g) : game(g) {} // ???
+	
+	
 };
 
 #endif

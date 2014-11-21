@@ -14,5 +14,15 @@ public:
 	
 };
 
+	Placement::void jouer(){
+		Joueur j1 = game.getJoueur1();
+		Joueur j2 = game.getJoueur2();
+		
+		for(int i=0; i<9; ++i){
+			j1.placer();
+			j2.placer();
+		}
+	}
+
 
 #endif

@@ -57,12 +57,32 @@ public:
 	
 	
 	bool placPion(Pion p, int pos){
-		assert(matriceH.estVide(pos) and matriceV.estVide(conv(pos)));
-		bool effectue;
-		effectue = matriceH.setPion(&p, pos);
-		effectue = effectue and matriceV.setPion(&p, conv(pos));
+		
+		bool effectue = false;
+		if(matriceH.estVide(pos)){
+			delete matriceH.pion(pos);
+			assert(matriceH.estVide(pos) and matriceV.estVide(conv(pos)));
+			effectue = matriceH.setPion(&p, pos);
+			effectue = effectue and matriceV.setPion(&p, conv(pos));
+			
+		}
+		return effectue;
+		
+	}
+	bool suppPion(Pion p, int pos){
+		bool effectue = false;
+		if(!matriceH.estVide(pos)){
+			delete matriceH.pion(pos);
+			Pion* nouvPionVide = new PionV();
+			effectue = matriceH.setPion(nouvPionVide, pos);
+			effectue = effectue and matriceV.setPion(nouvPionVide, conv(pos));
+			
+		}else{
+			std::cout<< " can't do that\n";
+		}
 		return effectue;
 	}	
+	
 	
 	int getRight(int x){ // passer le code en matrice horizontale
 		int res = x;
@@ -210,13 +230,14 @@ public:
 				matriceV.setPion (&pion, conv(down));
 				matriceV.setPion (temp, conv(indice));
 			}else{
-				std::cout<< " can't go down\n";
+				std::cout<< " can't do that\n";
 			}
 		}else{
-			std::cout<< " can't go down\n";
+			std::cout<< " can't do that\n";
 		} 
 	}
 	*/
+	
 	
 };
 
