@@ -59,6 +59,7 @@ public:
 	void dep(Pion *p, Fonction direction);
 	Pion* getPion(int indice);
 	int getIndice(Pion *p);
+	void Plateau::dep(int indice, Fonction direction);
 	
 };
 
@@ -270,6 +271,10 @@ public:
 		}else{
 			std::cout<< " can't do that\n";
 		} 
+	}
+	void Plateau::dep(int indice, Fonction direction){
+		Pion *p = matriceH.pion(indice);
+		dep(p,direction);
 	}
 	
 	Pion* Plateau::getPion(int indice){
