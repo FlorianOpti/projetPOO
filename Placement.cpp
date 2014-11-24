@@ -1,16 +1,25 @@
 #ifndef Placement
 #define Placement
-
-#include "Phase.cpp"
+#include "Player.cpp"
+#include "Matrice.cpp"
+#include "Pion.cpp"
+#include "Placement.cpp"
+#include "Deplacement.cpp"
 #include "Game.cpp"
 
+<<<<<<< HEAD
 class Placement :  Phase 
+=======
+
+class Phase;
+
+class Placement : Phase 
+>>>>>>> 99ebb6ddb3aa154de59ed3505572865c611276be
 {
 public:
 	void jouer ();
 	
 	Placement (Game g) {super(g);}	
-	
 	
 };
 
