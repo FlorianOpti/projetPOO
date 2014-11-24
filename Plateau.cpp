@@ -46,20 +46,37 @@ protected:
 	}
 	
 public:
+	typedef int(*Fonction)(int);
+	~Plateau();
+	Plateau();
+	bool placPion(Pion *p, int pos);
+	bool suppPion(int pos);
+	bool suppPion(Pion* p);
+	int getRight(int x);
+	int getDown(int x);
+	int getLeft(int x);
+	int getUp(int x);
+	void dep(Pion *p, Fonction direction);
+	Pion* getPion(int indice);
+	int getIndice(Pion *p);
+	
+};
 
-	~Plateau(){
+
+	
+	Plateau::~Plateau(){
 		delete &matriceH;
 		delete &matriceV;
 	}
 
 	
-	Plateau(){
+	Plateau::Plateau(){
 		matriceH = *(new Matrice());
 		matriceV = *(new Matrice());
 	}
 	
 	
-	bool placPion(Pion *p, int pos){
+	bool Plateau::placPion(Pion *p, int pos){
 		
 		bool effectue = false;
 		if(matriceH.estVide(pos)){
@@ -72,7 +89,7 @@ public:
 		return effectue;
 		
 	}
-	bool suppPion(int pos){
+	bool Plateau::suppPion(int pos){
 		bool effectue = false;
 		if(!matriceH.estVide(pos)){
 			delete matriceH.pion(pos);
@@ -85,7 +102,7 @@ public:
 		}
 		return effectue;
 	}	
-	bool suppPion(Pion *p){
+	bool Plateau::suppPion(Pion *p){
 		bool effectue = false;
 		int pos = matriceH.indice(p); 
 		if(!matriceH.estVide(pos)){
@@ -101,7 +118,7 @@ public:
 	}	
 	
 	
-	int getRight(int x){ // passer le code en matrice horizontale
+	int Plateau::getRight(int x){ // passer le code en matrice horizontale
 		int res = x;
 		x++;
 		if( x%3 == 0){
@@ -110,7 +127,7 @@ public:
 			return res+1;
 		}
 	}
-	int getDown(int x){
+	int Plateau::getDown(int x){
 		int res = x;
 		x++;
 		x = conv(x);
@@ -122,7 +139,7 @@ public:
 		}
 		
 	}
-	int getLeft(int x){
+	int Plateau::getLeft(int x){
 		int res = x;
 		x++;
 		if( x%3 == 1){
@@ -131,7 +148,7 @@ public:
 			return (res-1);
 		}
 	}
-	int getUp(int x){
+	int Plateau::getUp(int x){
 		int res = x;
 		x++;
 		x = conv(x);
@@ -232,7 +249,8 @@ public:
 	//POINTEUR VERS FONCTION !!!
 	
 	typedef int(*Fonction)(int);
-	void dep(Pion *p, Fonction direction){
+	
+	void Plateau::dep(Pion *p, Fonction direction){
 		int indice = matriceH.indice(p);
 		int down = direction(indice);
 		if(down != -1){
@@ -254,15 +272,22 @@ public:
 		} 
 	}
 	
+	Pion* Plateau::getPion(int indice){
+		return matriceH.pion(indice);
+	}
+	
+	int Plateau::getIndice(Pion *p){
+		return matriceH.indice(p);
+	}
 	
 	
-};
-/*
+	
+
 int main(){
 	Plateau P = *(new Plateau());
 	
 	return 0;
-*/
+
 }
 #endif
 
