@@ -1,6 +1,8 @@
 #ifndef _Phase_
 #define _Phase_
 
+#include "Deplacement.cpp"
+#include "Placement.cpp"
 #include "Game.cpp"
 
 class Phase //(abstract)

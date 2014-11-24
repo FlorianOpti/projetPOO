@@ -1,8 +1,10 @@
+
+
 #ifndef _Game_
 #define _Game_
 
 
-
+/*
 #include "Player.cpp"
 #include "Phase.cpp"
 #include "Plateau.cpp"
