@@ -28,20 +28,20 @@ void Deplacement::jouer()
 	//---on fait les fais jouer 1 par 1
 	//---leurs nombres de pion observe plateau qui sera modifier dans faire_jouer
 	//----------------------------
-	while(game.joueur2.getNbPiob()>2 && game.joueur1.getNbPion()>2)
+	while(game.getJ2().getNbPion()>2 && game.getJ1().getNbPion()>2)
 	{
-		faire_jouer(game.joueur1);
-		faire_jouer(game.joueur2);
+		faire_jouer(game.getJ1());
+		faire_jouer(game.getJ2());
 	}
 	//----------------------------
 	//---On a plus qu'a afficher le vainqueur
 	//---donc celui qui a plus de 2 pion
 	//----------------------------
-	if (game.joueur2.getNbPiob()>2)
+	if (game.getJ2().getNbPion()>2)
 	{
 	std::cout<<" JOUEUR 2 VICTORIEUX"<<std::endl; 
 	}
-	if (game.joueur1.getNbPiob()>2)
+	if (game.getJ1().getNbPion()>2)
 	{
 	std::cout<<" JOUEUR 1 VICTORIEUX"<<std::endl; 
 	}
@@ -53,28 +53,28 @@ void Deplacement::jouer()
 
 
 
-void Deplacement::faire_jouer(Player j)
+void Deplacement::faire_jouer(Player joueur)
 {	
-	int d,u,r,l; 						//contenant les entier renvoyer par getDown(i), getRight(i), ... de game.plateau. U = up, D = down,....
+	int d,u,r,l; 						//contenant les entier renvoyer par getDown(i), getRight(i), ... de game.getPlateau(). U = up, D = down,....
 	string choix;						//le choix a chaque std::cin
-	int i,j;     						//i position du pion a depalacer, j pion a supprimer
+	int i,j;     						//i position du pion a deplacer, j pion a supprimer
 	still_not_move = true ;			//indique si le joueur a effectuer son deplacement
 	while (still_not_move)
 	{
 		//----------------------------
 		//----Obtention du pion a deplacer
 		//----------------------------
-		j.affichage();
+		joueur.affichage();
 		std::cout<<"Quel pion a deplacer ? "<<std::endl;
 		std::cin>>choix;
 		i = atoi(choix.c_str());
 		//----------------------------
 		//-----Stockage des valeurs des possibles deplacement du pion
 		//----------------------------
-		r=game.plateau.getRight(i);
-		l=game.plateau.getLeft(i);
-		u=game.plateau.getUp(i);
-		d=game.plateau.getDown(i);
+		r=game.getPlateau().getRight(i);
+		l=game.getPlateau().getLeft(i);
+		u=game.getPlateau().getUp(i);
+		d=game.getPlateau().getDown(i);
 		//----------------------------
 		//----Test si le pion peut au moin etre depalcer
 		//----------------------------
@@ -106,7 +106,7 @@ void Deplacement::faire_jouer(Player j)
 						else 
 						{	
 							still_not_move = false;
-							game.plateau.dep(i,r);
+							game.getPlateau().dep(i,r);
 							i = r;
 						}	
 						break;
@@ -120,7 +120,7 @@ void Deplacement::faire_jouer(Player j)
 						else 
 						{
 							still_not_move = false;
-							game.plateau.dep(i,l);
+							game.getPlateau().dep(i,l);
 							i = l;
 						}
 						break;
@@ -134,7 +134,7 @@ void Deplacement::faire_jouer(Player j)
 						else 
 						{
 							still_not_move = false;
-							game.plateau.dep(i,u);
+							game.getPlateau().dep(i,u);
 							i = u;
 						}
 						break;
@@ -148,7 +148,7 @@ void Deplacement::faire_jouer(Player j)
 						else 
 							{
 							still_not_move = false;
-							game.plateau.dep(i,d);
+							game.getPlateau().dep(i,d);
 							i = d;
 							
 						}
@@ -157,24 +157,23 @@ void Deplacement::faire_jouer(Player j)
 				}
 			}
 		}
-		//----------------------------
-		//---Le pion a été déplacé, et i contient la nouvelle coordonée
-		//----------------------------
-		//---On test si le deplacment du pion a completer une ligne de 3
-		//----------------------------
-		if(game.plateau.LignePleine(i) || game.plateau.ColonnePleine(i))
-		{
-		//----------------------------
-		//---Si oui, on peut supprimer un pion adverse
-		//---On recupere donc le pion a supprimer, et on le supprime
-		//---le joueur peut supprimer un de ses propres pions.... surement une technique de pro
-		//----------------------------
-			std::cout<<"Vous pouvez supprimer un pion, quel position ? "<<std::endl;
-			cin>>choix;
-			j = atoi(choix.c_str());
-			game.plateau.suppPion(j);
-		}
-
+	//----------------------------
+	//---Le pion a été déplacé, et i contient la nouvelle coordonée
+	//----------------------------
+	//---On test si le deplacment du pion a completer une ligne de 3
+	//----------------------------
+	if(game.getPlateau().LignePleine(i) || game.getPlateau().ColonnePleine(i))
+	{
+	//----------------------------
+	//---Si oui, on peut supprimer un pion adverse
+	//---On recupere donc le pion a supprimer, et on le supprime
+	//---le joueur peut supprimer un de ses propres pions.... surement une technique de pro
+	//----------------------------
+		std::cout<<"Vous pouvez supprimer un pion, quel position ? "<<std::endl;
+		cin>>choix;
+		j = atoi(choix.c_str());
+		game.getPlateau().suppPion(j);
+	}
 }
 	
 

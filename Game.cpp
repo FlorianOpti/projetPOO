@@ -4,14 +4,7 @@
 #define _Game_
 
 
-/*
-#include "Player.cpp"
-#include "Phase.cpp"
-#include "Plateau.cpp"
 
-
-
-/*(NULL)*/
 class Game 
 {
 
@@ -39,22 +32,7 @@ public :
 	
 	void play () 
 	{
-		//bool gameover = false ;
-		
-		/*for (int i(0); i<=8; ++i)
-		{
-			phaseCourante.jouer(); 
-		}*/
-		//phaseCourante = phaseDeplacement;			
-		//while (!gameover)
-		//{
 		phaseCourante.jouer();
-			//udpdate(gameover);
-			//if (joueur1.getnbPion() > 2 && joueur2.getnbPion() > 2)// le deuxieme joueur peut jouer si il a perdu mais pas grave
-			//{
-			//	gameover=true;
-			//}
-		}
 	}
 	Player getJ1(){
 		return joueur1;
