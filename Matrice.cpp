@@ -2,7 +2,7 @@
 #ifndef Matrice_
 #define Matrice_
 
-#include "Pion.cpp"
+#include "PionV.cpp"
 #include "Color.cpp"
 #include<cassert>
 
@@ -58,7 +58,7 @@ Matrice::Matrice()
 	int i;
 	for(i=0; i<24; ++i)
 	{
-		matr[i] = new Pion();
+		matr[i] = new PionV();
 	}
 }
 
