@@ -1,9 +1,9 @@
-#include "PionN.cpp"
+
 #ifndef Pion_
 #define Pion_
 
 #include "Color.cpp"
-
+//#include "PionN.cpp"
 
 
 

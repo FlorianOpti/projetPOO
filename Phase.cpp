@@ -6,7 +6,7 @@
 class Phase //(abstract)
 {
 public:
-	virtual void jouer ();
+	virtual void jouer ()=0;
 protected:
 	Game game;
 

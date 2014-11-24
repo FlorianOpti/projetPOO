@@ -1,10 +1,13 @@
+
+
 #ifndef _Game_
 #define _Game_
 
 
-
 #include "Player.cpp"
 #include "Phase.cpp"
+#include "Placement.cpp"
+#include "Deplacement.cpp"
 #include "Plateau.cpp"
 
 
@@ -19,9 +22,9 @@ protected:
 	Player joueur1;
 	Player joueur2;
 	Plateau plateau;
-	Phase phaseCourante;
-	Placement phasePlacement;
-	Deplacement phaseDeplacement;
+	Phase *phaseCourante;
+	Placement *phasePlacement;
+	Deplacement *phaseDeplacement;
 
 
 public :

@@ -4,7 +4,7 @@
 #include "Phase.cpp"
 #include "Game.cpp"
 
-class Placement : Phase 
+class Placement :  Phase 
 {
 public:
 	void jouer ();
