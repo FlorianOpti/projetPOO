@@ -47,7 +47,10 @@ protected:
 	
 public:
 
-	~Plateau();
+	~Plateau(){
+		delete &matriceH;
+		delete &matriceV;
+	}
 
 	
 	Plateau(){
@@ -56,23 +59,37 @@ public:
 	}
 	
 	
-	bool placPion(Pion p, int pos){
+	bool placPion(Pion *p, int pos){
 		
 		bool effectue = false;
 		if(matriceH.estVide(pos)){
 			delete matriceH.pion(pos);
 			assert(matriceH.estVide(pos) and matriceV.estVide(conv(pos)));
-			effectue = matriceH.setPion(&p, pos);
-			effectue = effectue and matriceV.setPion(&p, conv(pos));
+			effectue = matriceH.setPion(p, pos);
+			effectue = effectue and matriceV.setPion(p, conv(pos));
 			
 		}
 		return effectue;
 		
 	}
-	bool suppPion(Pion p, int pos){
+	bool suppPion(int pos){
 		bool effectue = false;
 		if(!matriceH.estVide(pos)){
 			delete matriceH.pion(pos);
+			Pion* nouvPionVide = new PionV();
+			effectue = matriceH.setPion(nouvPionVide, pos);
+			effectue = effectue and matriceV.setPion(nouvPionVide, conv(pos));
+			
+		}else{
+			std::cout<< " can't do that\n";
+		}
+		return effectue;
+	}	
+	bool suppPion(Pion *p){
+		bool effectue = false;
+		int pos = matriceH.indice(p); 
+		if(!matriceH.estVide(pos)){
+			delete p;
 			Pion* nouvPionVide = new PionV();
 			effectue = matriceH.setPion(nouvPionVide, pos);
 			effectue = effectue and matriceV.setPion(nouvPionVide, conv(pos));
@@ -125,7 +142,7 @@ public:
 			return conv (res-1);
 		}
 	}
-	void depRight(Pion pion){
+	/*void depRight(Pion pion){
 		// si on peut se deplacer a droite ( une case a droite et innocuppée)
 		int indice = matriceH.indice(&pion);
 		int right = getRight(indice);
@@ -211,23 +228,23 @@ public:
 			std::cout<< " can't go down\n";
 		} 
 	}
-	
+	*/
 	//POINTEUR VERS FONCTION !!!
 	
-	/*typedef int(*Fonction)(int);
-	void dep(Pion p, Fonction direction){
-	int indice = matriceH.indice(&pion);
+	typedef int(*Fonction)(int);
+	void dep(Pion *p, Fonction direction){
+		int indice = matriceH.indice(p);
 		int down = direction(indice);
 		if(down != -1){
 			Pion* pdown = matriceH.pion(down);
-			if(isVide(*pdown)){
-				PionV temp = matriceH.pion(down);
+			if(matriceH.estVide(matriceH.indice(pdown))){
+				Pion *temp = matriceH.pion(down);
 				// sauvegarde du pionvide ou on va bouger
 				
-				matriceH.setPion (&pion, down);
+				matriceH.setPion (p, down);
 				matriceH.setPion (temp, indice);
 				
-				matriceV.setPion (&pion, conv(down));
+				matriceV.setPion (p, conv(down));
 				matriceV.setPion (temp, conv(indice));
 			}else{
 				std::cout<< " can't do that\n";
@@ -236,14 +253,16 @@ public:
 			std::cout<< " can't do that\n";
 		} 
 	}
-	*/
+	
 	
 	
 };
-
+/*
 int main(){
 	Plateau P = *(new Plateau());
 	
+	return 0;
+*/
 }
 #endif
 
