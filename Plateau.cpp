@@ -2,6 +2,7 @@
 #define Plateau_
 
 #include "Matrice.cpp"
+#include "Color.cpp"
 #include<cmath>
 
 
@@ -57,9 +58,11 @@ public:
 	int getLeft(int x);
 	int getUp(int x);
 	void dep(Pion *p, Fonction direction);
+	void dep(int indice, Fonction direction);
 	Pion* getPion(int indice);
 	int getIndice(Pion *p);
-	void Plateau::dep(int indice, Fonction direction);
+	bool LignePleine (Pion* pion ,Colore color);
+	bool ColonnePleine (Pion* pion,Colore color);
 	
 };
 
@@ -283,6 +286,19 @@ public:
 	
 	int Plateau::getIndice(Pion *p){
 		return matriceH.indice(p);
+	}
+	
+	bool Plateau::LignePleine (Pion* pion,Colore color){
+		int indice = matriceH.indice(pion);
+		indice = indice /3;
+		
+		return matriceH.LignePleine(indice,color);
+	}
+	bool Plateau::ColonnePleine (Pion* pion,Colore color){
+		int indice = matriceV.indice(pion);
+		indice = indice /3;
+		
+		return matriceV.LignePleine(indice,color);
 	}
 	
 	
