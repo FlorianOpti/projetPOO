@@ -32,17 +32,21 @@ public:
 		couleur.affichage();
 		cout << " avec nbPion = "<< nbPion << endl;
 	}
+	
+	int getNbPion ()
+	{
+		return nbPion;
+	}
+	
+	void perdrePion ()
+	{
+		nbPion--;
+	}
+	
+	
 
 };
 
-int main(){
-	Player a(*(new Colore(1,0))), b(*(new Colore(0,1)));
-	Player* c = new Player();
-	a.affichage();
-	b.affichage();
-	c->affichage();
-	return 0;
-}
 
 #endif
 /*
