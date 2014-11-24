@@ -61,8 +61,8 @@ public:
 	void dep(int indice, Fonction direction);
 	Pion* getPion(int indice);
 	int getIndice(Pion *p);
-	bool LignePleine (Pion* pion ,Colore color);
-	bool ColonnePleine (Pion* pion,Colore color);
+	bool LignePleine (int indice);
+	bool ColonnePleine (int indice);
 	
 };
 
@@ -288,17 +288,18 @@ public:
 		return matriceH.indice(p);
 	}
 	
-	bool Plateau::LignePleine (Pion* pion,Colore color){
-		int indice = matriceH.indice(pion);
+	bool Plateau::LignePleine (int indice){
+		Pion * pion = matriceH.pion(indice);
 		indice = indice /3;
 		
-		return matriceH.LignePleine(indice,color);
+		return matriceH.LignePleine(indice, pion->getColore());
 	}
-	bool Plateau::ColonnePleine (Pion* pion,Colore color){
-		int indice = matriceV.indice(pion);
+	bool Plateau::ColonnePleine (int indice){
+		Pion * pion = matriceH.pion(indice);
+		indice = conv(indice);
 		indice = indice /3;
 		
-		return matriceV.LignePleine(indice,color);
+		return matriceV.LignePleine(indice,pion->getColore());
 	}
 	
 	
