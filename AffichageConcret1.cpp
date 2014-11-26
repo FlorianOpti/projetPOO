@@ -18,7 +18,7 @@ public:
 	 	InterCase* horiz = fac.factoryMethod("horizontale");
 	 	InterCase* esp = fac.factoryMethod("espace");
 	 	
-	 	
+	 	// mettre les indic (1-13) (A-M)
 	 	string[285] aff;
 	 	int j = 0;
 	 	for (int i=0; i<285; ++i){
