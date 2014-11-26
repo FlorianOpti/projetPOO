@@ -1,21 +1,14 @@
-<<<<<<< HEAD
-
-
-#ifndef _Game_
-#define _Game_
-
-
 #include "Player.cpp"
 #include "Phase.cpp"
 #include "Placement.cpp"
 #include "Deplacement.cpp"
 #include "Plateau.cpp"
-=======
+
 
 
 #ifndef _Game_
 #define _Game_
->>>>>>> 99ebb6ddb3aa154de59ed3505572865c611276be
+
 
 
 
