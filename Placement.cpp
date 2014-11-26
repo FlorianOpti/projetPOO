@@ -36,7 +36,7 @@ void Placement::jouer(){
 	
 void Placement::faire_jouer(Player joueur)
 {
-	string choix;
+	std::string choix;
 	int i;
 	joueur.arffichage();
 	std::cout<<"Placer un pion à quelle position ? "<<std::endl;

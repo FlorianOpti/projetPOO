@@ -4,13 +4,13 @@ class Espace : InterCase
 {
 public:
 	void affichage ();
-	string toString();
+	std::string toString();
 };
 
 void Espace ::affichage (){
 
 }
-string Espace ::toString(){
+std::string Espace ::toString(){
 	return " ";
 }
 

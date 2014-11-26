@@ -20,7 +20,7 @@ public:
 	{
 	color.affichage();
 	}
-	string toString(){
+	std::string toString(){
 		return "N";
 	}
 };

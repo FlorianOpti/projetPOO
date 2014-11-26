@@ -4,7 +4,7 @@
 class FactoryPion : FactoryGraphique 
 {
 public:
-	ElemGraph factoryMethod (string type);
+	ElemGraph factoryMethod (std::string type);
 	FactoryPion();
 	~FactoryPion();
 };
@@ -12,7 +12,7 @@ public:
 FactoryPion ::FactoryPion(){}
 FactoryPion ::~FactoryPion(){};
 
-ElemGraph FactoryPion::factoryMethod (string type){
+ElemGraph FactoryPion::factoryMethod (std::string type){
 	if(type == "rouge"){
 		return new PionR();
 	}else if(type == "noir"){

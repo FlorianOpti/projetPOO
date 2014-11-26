@@ -49,7 +49,7 @@ void Deplacement::jouer()
 void Deplacement::faire_jouer(Player joueur)
 {	
 	int d,u,r,l; 						//contenant les entier renvoyer par getDown(i), getRight(i), ... de game.getPlateau(). U = up, D = down,....
-	string choix;						//le choix a chaque std::cin
+	std::string choix;						//le choix a chaque std::cin
 	int i,j;     						//i position du pion a deplacer, j pion a supprimer
 	still_not_move = true ;			//indique si le joueur a effectuer son deplacement
 	while (still_not_move)

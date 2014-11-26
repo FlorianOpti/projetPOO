@@ -4,13 +4,13 @@ class BarreVertic : InterCase
 {
 public:
 	void affichage ();
-	string toString();
+	std::string toString();
 };
 
 void BarreVertic ::affichage (){
 
 }
-string BarreVertic ::toString(){
+std::string BarreVertic ::toString(){
 	return " | ";
 }
 

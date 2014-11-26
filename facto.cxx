@@ -86,6 +86,6 @@ class ElemGraph
 {
 public:
 	void affichage ();
-	string toString ();
+	std::string toString ();
 };
 

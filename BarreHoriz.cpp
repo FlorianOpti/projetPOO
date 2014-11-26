@@ -4,13 +4,13 @@ class BarreHoriz : InterCase
 {
 public:
 	void affichage ();
-	string toString();
+	std::string toString();
 };
 
 void BarreHoriz ::affichage (){
 
 }
-string BarreHoriz ::toString(){
+std::string BarreHoriz ::toString(){
 	return "_";
 }
 
