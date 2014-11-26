@@ -18,6 +18,7 @@ public:
 	bool isRed ();
 	bool isVide ();
 	void affichage ();
+	bool isEquals(Colore c);
 	
 	
 	
@@ -95,6 +96,29 @@ void Colore::affichage ()
 		}
 	}
 	
+}
+
+bool Colore::isEquals(Colore c)
+{
+	if (c.isRed()&& isRed())
+	{
+		return true;
+	}
+	else {
+		if (c.isBlack() && isBlack())
+		{
+			return true;
+		}
+		else {
+			if (c.isVide() && isVide())
+			{
+			return true;
+			}
+			else {
+			return false;
+			}
+		}
+	}	
 }
 
 

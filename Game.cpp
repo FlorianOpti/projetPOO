@@ -51,6 +51,11 @@ public :
 		return plateau;
 	}
 	
+	void setPhaseDeplacement()
+	{
+		phaseCourante = Deplacement;
+	}
+	
 };
 
 #endif

@@ -43,6 +43,10 @@ public:
 		nbPion--;
 	}
 	
+	Colore getColore()
+	{
+		return couleur;
+	}
 	
 
 };

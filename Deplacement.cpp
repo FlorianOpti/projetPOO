@@ -167,12 +167,25 @@ void Deplacement::faire_jouer(Player joueur)
 	//----------------------------
 	//---Si oui, on peut supprimer un pion adverse
 	//---On recupere donc le pion a supprimer, et on le supprime
-	//---le joueur peut supprimer un de ses propres pions.... surement une technique de pro
 	//----------------------------
 		std::cout<<"Vous pouvez supprimer un pion, quel position ? "<<std::endl;
 		cin>>choix;
 		j = atoi(choix.c_str());
+		Colore a_supp = game.getPlateau().getPion(j).getColore(); //Contient la couleur du pion a suppirmer
+		//----------------------------
+		//---Boucle while, qui repete le demande de la position du pion a supprimer
+		//---a l'utilisateur tant que ce pion est de la meme couleur que le joueur ou
+		//---que c'est un pion vide
+		//----------------------------
+		while(a_supp.isEqual(joueur.getColore()) || (a_supp.isVide()))
+		{
+			std::cout<<"Vous ne pouvez pas supprimer ce pion, prenez en un autre ! "<<std::endl;
+			cin>>choix;
+			j = atoi(choix.c_str());
+			Colore a_supp = game.getPlateau().getPion(j).getColore(); 
+		}	
 		game.getPlateau().suppPion(j);
+		
 	}
 }
 	
