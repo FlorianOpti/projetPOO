@@ -63,6 +63,7 @@ public:
 	int getIndice(Pion *p);
 	bool LignePleine (int indice);
 	bool ColonnePleine (int indice);
+	Matrice getMatrice();
 	
 };
 
@@ -300,6 +301,9 @@ public:
 		indice = indice /3;
 		
 		return matriceV.LignePleine(indice,pion->getColore());
+	}
+	Matrice Plateau::getMatrice(){
+		return matriceH;
 	}
 	
 	

@@ -4,7 +4,7 @@
 class FactoryBarre : FactoryGraphique
 {
 public:
-	ElemGraph factoryMethod (string type);
+	ElemGraph* factoryMethod (string type);
 	FactoryBarre();
 	~FactoryBarre();
 };
@@ -12,7 +12,7 @@ public:
 FactoryBarre ::FactoryBarre(){}
 FactoryBarre ::~FactoryBarre(){};
 
-ElemGraph FactoryBarre::factoryMethod (string type){
+ElemGraph* FactoryBarre::factoryMethod (string type){
 	if(type == "verticale"){
 		return new BarreVertic();
 	}else if(type == "horizontale"){

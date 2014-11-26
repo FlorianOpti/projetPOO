@@ -11,7 +11,7 @@ void BarreVertic ::affichage (){
 
 }
 string BarreVertic ::toString(){
-	return " | ";
+	return "|";
 }
 
 #endif
