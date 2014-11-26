@@ -279,7 +279,7 @@ public:
 	//POINTEUR VERS FONCTION !!!
 	
 	typedef int(*Fonction)(int);
-	
+	// to do renvoyer un booleen pour utiliser dans Dplacement.cpp
 	void Plateau::dep(Pion *p, Fonction direction){
 		int indice = matriceH.indice(p);
 		int down = direction(indice);
