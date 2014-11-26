@@ -24,7 +24,7 @@ protected:
 	Phase *phaseCourante;
 	Placement *phasePlacement;
 	Deplacement *phaseDeplacement;
-	FinduJeu *phaseFinduJeu
+	FinduJeu *phaseFinduJeu;
 
 
 public :

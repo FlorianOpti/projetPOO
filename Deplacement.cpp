@@ -170,7 +170,7 @@ void Deplacement::faire_jouer(Player joueur)
 		//---a l'utilisateur tant que ce pion est de la meme couleur que le joueur ou
 		//---que c'est un pion vide
 		//----------------------------
-		while(a_supp.isEqual(joueur.getColore()) || (a_supp.isVide()))
+		while((a_supp.isEqual(joueur.getColore())) || (a_supp.isVide()))
 		{
 			std::cout<<"Vous ne pouvez pas supprimer ce pion, prenez en un autre ! "<<std::endl;
 			cin>>choix;
@@ -178,6 +178,17 @@ void Deplacement::faire_jouer(Player joueur)
 			Colore a_supp = game.getPlateau().getPion(j).getColore(); 
 		}	
 		game.getPlateau().suppPion(j);
+		//----------------------------
+		//---On diminue le nombre de pion du joueur adverse
+		//----------------------------
+		if(game.getJ1().getColore().isEquals(a_supp))
+		{
+			game.getJ1().perdrePion();
+		}
+		else 
+		{
+			game.getJ2().perdrePion();
+		}
 		
 	}
 }
