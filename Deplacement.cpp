@@ -15,7 +15,7 @@ class Deplacement : Phase
 {
 public:
 	void jouer ();
-	void faire_jouer(Player j);
+	void faire_jouer(Player joueur);
 	Deplacement(Game g) {super(g);}
 };
 
