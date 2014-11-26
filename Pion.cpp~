@@ -7,7 +7,7 @@
 
 
 
-class Pion
+class Pion : ElemGraph
 {
 public :
 	virtual Colore getColore()=0;

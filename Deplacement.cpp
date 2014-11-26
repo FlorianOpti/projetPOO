@@ -15,7 +15,7 @@ class Deplacement : Phase
 {
 public:
 	void jouer ();
-	void faire_jouer(Player j);
+	void faire_jouer(Player joueur);
 	Deplacement(Game g) {super(g);}
 };
 
@@ -37,15 +37,8 @@ void Deplacement::jouer()
 	//---On a plus qu'a afficher le vainqueur
 	//---donc celui qui a plus de 2 pion
 	//----------------------------
-	if (game.getJ2().getNbPion()>2)
-	{
-	std::cout<<" JOUEUR 2 VICTORIEUX"<<std::endl; 
-	}
-	if (game.getJ1().getNbPion()>2)
-	{
-	std::cout<<" JOUEUR 1 VICTORIEUX"<<std::endl; 
-	}
-	
+	game.setPhaseFinduJeu();
+	game.jouer();
 	
 	
 }
@@ -167,12 +160,36 @@ void Deplacement::faire_jouer(Player joueur)
 	//----------------------------
 	//---Si oui, on peut supprimer un pion adverse
 	//---On recupere donc le pion a supprimer, et on le supprime
-	//---le joueur peut supprimer un de ses propres pions.... surement une technique de pro
 	//----------------------------
 		std::cout<<"Vous pouvez supprimer un pion, quel position ? "<<std::endl;
 		cin>>choix;
 		j = atoi(choix.c_str());
+		Colore a_supp = game.getPlateau().getPion(j).getColore(); //Contient la couleur du pion a suppirmer
+		//----------------------------
+		//---Boucle while, qui repete le demande de la position du pion a supprimer
+		//---a l'utilisateur tant que ce pion est de la meme couleur que le joueur ou
+		//---que c'est un pion vide
+		//----------------------------
+		while((a_supp.isEqual(joueur.getColore())) || (a_supp.isVide()))
+		{
+			std::cout<<"Vous ne pouvez pas supprimer ce pion, prenez en un autre ! "<<std::endl;
+			cin>>choix;
+			j = atoi(choix.c_str());
+			Colore a_supp = game.getPlateau().getPion(j).getColore(); 
+		}	
 		game.getPlateau().suppPion(j);
+		//----------------------------
+		//---On diminue le nombre de pion du joueur adverse
+		//----------------------------
+		if(game.getJ1().getColore().isEquals(a_supp))
+		{
+			game.getJ1().perdrePion();
+		}
+		else 
+		{
+			game.getJ2().perdrePion();
+		}
+		
 	}
 }
 	

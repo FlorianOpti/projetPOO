@@ -24,6 +24,7 @@ protected:
 	Phase *phaseCourante;
 	Placement *phasePlacement;
 	Deplacement *phaseDeplacement;
+	FinduJeu *phaseFinduJeu;
 
 
 public :
@@ -35,6 +36,7 @@ public :
 		phaseDeplacement = new Deplacement(this);
 		phasePlacement = new Placement(this);
 		phaseCourante = phasePlacement;
+		phaseFinduJeu = new FinduJeu(this);
 	} 
 	
 	void play () 
@@ -49,6 +51,15 @@ public :
 	}
 	Plateau getPlateau(){
 		return plateau;
+	}
+	
+	void setPhaseDeplacement()
+	{
+		phaseCourante = phaseDeplacement;
+	}
+	void setPhaseFinduJeu()
+	{
+		phaseCourante = phaseFinduJeu;
 	}
 	
 };

@@ -51,6 +51,7 @@ public:
 	~Plateau();
 	Plateau();
 	bool placPion(Pion *p, int pos);
+	void placPion(Player j, int pos);
 	bool suppPion(int pos);
 	bool suppPion(Pion* p);
 	int getRight(int x);
@@ -94,6 +95,25 @@ public:
 		return effectue;
 		
 	}
+	
+	void Plateau::placPion(Player j,int pos)
+	{
+		Colore c = j.getColore();
+		FactoryPion fact = *(new FactoryPion());
+		
+		if(c.isBlack())
+		{
+			placPion(fact.factoryMethod("noir"),pos);
+		}
+		if(c.isRed())
+		{
+			placPion(fact.factoryMethod("rouge"),pos);
+		}
+		
+	}
+	
+	
+	
 	bool Plateau::suppPion(int pos){
 		bool effectue = false;
 		if(!matriceH.estVide(pos)){
