@@ -6,7 +6,8 @@ class FactoryGraphique
 public:
 	virtual FactoryGraphique()=0;
 	virtual ~FactoryGraphique()=0;
-	virtual ElemGraph factoryMethod (std::string type)=0;
+	virtual ElemGraph* factoryMethod (std::string type)=0;
+
 };
 
 #endif

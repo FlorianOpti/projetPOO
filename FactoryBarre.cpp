@@ -4,7 +4,9 @@
 class FactoryBarre : FactoryGraphique
 {
 public:
-	ElemGraph factoryMethod (std::string type);
+
+	ElemGraph* factoryMethod (std::string type);
+
 	FactoryBarre();
 	~FactoryBarre();
 };
@@ -12,7 +14,9 @@ public:
 FactoryBarre ::FactoryBarre(){}
 FactoryBarre ::~FactoryBarre(){};
 
-ElemGraph FactoryBarre::factoryMethod (std::string type){
+
+ElemGraph* FactoryBarre::factoryMethod (std::string type){
+
 	if(type == "verticale"){
 		return new BarreVertic();
 	}else if(type == "horizontale"){
