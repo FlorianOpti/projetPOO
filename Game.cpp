@@ -53,13 +53,16 @@ public :
 		return plateau;
 	}
 	
-	void setPhaseDeplacement()
+	Phase* getPhaseDeplacement()
 	{
-		phaseCourante = phaseDeplacement;
+		return phaseDeplacement;
 	}
-	void setPhaseFinduJeu()
+	Phase* getPhaseFinduJeu()
 	{
-		phaseCourante = phaseFinduJeu;
+		return phaseFinduJeu;
+	}
+	void setPhase(Phase p){
+		phaseCourante = p;
 	}
 	
 };
