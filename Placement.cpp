@@ -31,7 +31,7 @@ void Placement::jouer(){
 			faire_jouer(j2);
 		}
 		game.setPhaseDeplacement();
-		game.jouer();
+		game.play();
 	}
 	
 void Placement::faire_jouer(Player joueur)
