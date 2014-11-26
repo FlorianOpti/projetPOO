@@ -3,7 +3,7 @@
 class AffichageConcret1 : Affichage
 {
 private:
-	Plateau plat;
+	Observalble plat;
 	FactoryBarre fac;
 public:
 	AffichageConcret1(Plateau p){
@@ -19,42 +19,56 @@ public:
 	 	InterCase* esp = fac.factoryMethod("espace");
 	 	
 	 	// mettre les indic (1-13) (A-M)
-	 	string[285] aff;
+	 	string[375] aff;
 	 	int j = 0;
-	 	for (int i=0; i<285; ++i){
-	 		if(i==0||i==10||i==20||i==47||i==54||i==61||
-	 		i==94||i==98||i==102||i==132||i==135||i==138||
-	 		i==146||i==149||i==152||i==182||i==186||i==190||
-	 		i==223||i==230||i==237||i==264||i==274||i==284){
+	 	int car;
+	 	char c;
+	 	string chaine =  "1  2  3   4   5  6  7   \n";
+	 	int cptChaine = 0;
+
+	 	for (int i=0; i<375; ++i){
+	 		if(i==0||i==10||i==20||i==53||i==60||i==67||
+	 		i==106||i==110||i==114||i==150||i==153||i==156||
+	 		i==164||i==167||i==170||i==206||i==210||i==214||
+	 		i==253||i==260||i==267||i==300||i==310||i==320){
 	 		
 	 			aff[i] = m[j];
 	 			j++;
-	 		}else if((i>0 && i<20 && i!=10)||
-	 			(i>47&&i<61)||
-	 			(i>94&&i<102)||
-	 			(i>132&&i<138)||
-	 			(i>146&&i<152)||
-	 			(i>182&&i<190)||
-	 			(i>223&&i<237)||
-	 			(i>264&&i<284))
+	 		}else if((i>0 && i<20)||
+	 			(i>53&&i<67)||
+	 			(i>106&&i<114)||
+	 			(i>150&&i<156)||
+	 			(i>164&&i<170)||
+	 			(i>206&&i<214)||
+	 			(i>253&&i<267)||
+	 			(i>300&&i<320))||
+	 			(i%25==22)
 	 			
 	 			
 		 		aff[i]=horiz->toString();
-			}else if(i%22==21){	
+			}else if(i%25==24){	
 				aff[i] = "\n";
-			}else if( (i%22==0)||
-				(i%22==20)||
-				(i>47 && i<237 && (i%22==3||i%22==17))||
-				(i==32||i==76||i==110+16||i==154+16||
-				i==110+24||i==154+24||i==208||i==252)
+			}else if( (i%25==0)||
+				(i%25==20)||
+				(i>53 && i<267 && (i%25==3||i%25==17))||
+				(i==35||i==85||i==131||i==189||
+				i==139||i==181||i==235||i==285)
 				){
 				
 				aff[i] = vertic->toString();
+			}else if(i%25==23){
+				car = (i+2)/25;
+				c = 64 + car;
+				aff[i] = "" + c;
+				
+			}else if(i=>350){
+				aff[i] = chaine.at(cptChaine);
+				cptChaine++; 
 			}else{
 				aff[i] = esp->toString();
 			}
 	 	}
-	 	for (int i=0; i<285; ++i){
+	 	for (int i=0; i<375; ++i){
 	 		cout<<aff[i];
 	 	}
 	 	

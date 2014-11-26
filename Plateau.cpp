@@ -7,11 +7,12 @@
 
 
 
-class Plateau 
+class Plateau : Observable
 {
 protected:
 	Matrice matriceH;
 	Matrice matriceV;
+	Affichage aff;
 	
 	int conv(int x){
 		assert(x>-1 and x<24);
@@ -49,7 +50,7 @@ protected:
 public:
 	typedef int(*Fonction)(int);
 	~Plateau();
-	Plateau();
+	Plateau(Affichage a);
 	bool placPion(Pion *p, int pos);
 	void placPion(Player j, int pos);
 	bool suppPion(int pos);
@@ -65,6 +66,9 @@ public:
 	bool LignePleine (int indice);
 	bool ColonnePleine (int indice);
 	Matrice getMatrice();
+	void notif ();
+	void add(Affichage obs){}
+	void supp(Affichage obs){}
 	
 };
 
@@ -76,7 +80,8 @@ public:
 	}
 
 	
-	Plateau::Plateau(){
+	Plateau::Plateau(Affichage a){
+		a = *(new AffichageConcret1());
 		matriceH = *(new Matrice());
 		matriceV = *(new Matrice());
 	}
@@ -323,10 +328,16 @@ public:
 		return matriceV.LignePleine(indice,pion->getColore());
 	}
 	Matrice Plateau::getMatrice(){
-		return matriceH;
+		return *matriceH;
 	}
 	
-	
+	void Plateau::notif (){
+		/*for (Affichage a : aff){
+			a.update();
+		}*/
+		aff.update();
+	}
+
 	
 
 int main(){
