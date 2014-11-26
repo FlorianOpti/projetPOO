@@ -23,6 +23,9 @@ public:
 	{
 	color.affichage();
 	}
+	string toString(){
+		return "O";
+	}
 
 
 };

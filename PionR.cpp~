@@ -1,7 +1,7 @@
 #ifndef PionR_
 #define PionR_
 
-#include "PionV.cpp"
+#include "Pion.cpp"
 
 class PionR : public Pion
 {

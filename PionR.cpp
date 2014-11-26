@@ -19,6 +19,9 @@ public:
 	{
 	color.affichage();
 	}
+	string toString(){
+		return "R";
+	}
 
 
 };

@@ -4,7 +4,7 @@
 #include "Pion.cpp"
 
 
-class PionN : public Pion
+class PionN : Pion
 {
 public:
 	PionN()
@@ -19,6 +19,9 @@ public:
 	void affichage()
 	{
 	color.affichage();
+	}
+	string toString(){
+		return "N";
 	}
 };
 

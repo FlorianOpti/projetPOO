@@ -1,7 +1,7 @@
 #ifndef PionN_
 #define PionN_
 
-#include "PionR.cpp"
+#include "Pion.cpp"
 
 
 class PionN : public Pion
@@ -19,6 +19,9 @@ public:
 	void affichage()
 	{
 	color.affichage();
+	}
+	string toString(){
+		return "N";
 	}
 };
 
