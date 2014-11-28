@@ -1,6 +1,8 @@
 #ifndef Placement
 #define Placement
+
 #include "Player.cpp"
+#include "Phase.cpp"
 #include "Matrice.cpp"
 #include "Pion.cpp"
 #include "Placement.cpp"
@@ -10,7 +12,7 @@
 
 #include <iostream>
 
-class Phase;
+
 
 class Placement : Phase 
 {

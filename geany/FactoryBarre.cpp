@@ -1,6 +1,14 @@
 
 #ifndef _FacBA_
 #define _FacBA_
+#include<iostream>
+#include "FactoryGraphique.cpp"
+#include "BarreVertic.cpp"
+#include "BarreHoriz.cpp"
+#include "Espace.cpp"
+
+
+
 class FactoryBarre : FactoryGraphique
 {
 public:
@@ -24,7 +32,9 @@ ElemGraph* FactoryBarre::factoryMethod (std::string type){
 	}else if(type == "espace"){
 		return new Espace();
 	}else{
-		cout << "can t instanciate that Intercase\n";
+		std::cout << "can t instanciate that Intercase\n";
+		
 	}
+	return null;
 }
 #endif

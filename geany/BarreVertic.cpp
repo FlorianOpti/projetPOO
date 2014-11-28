@@ -1,6 +1,8 @@
 #ifndef _BarreVertic_
 #define _BarreVertic_
-class BarreVertic : InterCase 
+#include <string>
+#include "InterCase.cpp"
+class BarreVertic : InterCase
 {
 public:
 	void affichage ();
@@ -10,13 +12,9 @@ public:
 void BarreVertic ::affichage (){
 
 }
-<<<<<<< HEAD
-std::string BarreVertic ::toString(){
-	return " | ";
-=======
-string BarreVertic ::toString(){
-	return "|";
->>>>>>> 8d5349f4eefbcf1fd5a854a1d1c7363a3b53fdcd
-}
 
+
+std::string BarreVertic ::toString(){
+	return "|";
+}
 #endif

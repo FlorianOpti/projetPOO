@@ -1,6 +1,10 @@
 #ifndef _FacP_
 #define _FacP_
 #include<string.h>
+#include "PionN.cpp"
+#include "PionR.cpp"
+#include "PionV.cpp"
+
 class FactoryPion : FactoryGraphique 
 {
 public:
@@ -24,7 +28,8 @@ ElemGraph* FactoryPion::factoryMethod (std::string type){
 	}else if(type == "vide"){
 		return new PionV();
 	}else{
-		cout << "can t instanciate that Pion\n";
+		std :: cout << "can t instanciate that Pion\n";
 	}
+	return null;
 }
 #endif

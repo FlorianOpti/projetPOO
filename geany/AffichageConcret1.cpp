@@ -1,9 +1,11 @@
 #ifndef _AffC1_
 #define _AffC1_
+#include "Affichage.cpp"
+#include "Sujet.cpp"
 class AffichageConcret1 : Affichage
 {
 private:
-	Observalble plat;
+	Sujet plat;
 	FactoryBarre fac;
 public:
 	AffichageConcret1(Plateau p){
@@ -74,4 +76,4 @@ public:
 	 	
 
 };
-#endif;
+#endif

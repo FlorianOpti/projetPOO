@@ -1,7 +1,7 @@
 #ifndef Placement
 #define Placement
 
-
+#include "Game.cpp"
 
 #include <iostream>
 

@@ -1,11 +1,12 @@
 
 #ifndef _Fgrap_
 #define _Fgrap_
+#include "ElemGraph.cpp"
 class FactoryGraphique 
 {
 public:
-	virtual FactoryGraphique()=0;
-	virtual ~FactoryGraphique()=0;
+	FactoryGraphique();
+	~FactoryGraphique();
 	virtual ElemGraph* factoryMethod (std::string type)=0;
 
 };
