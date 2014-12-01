@@ -1,0 +1,157 @@
+
+#ifndef _Color_
+#define _Color_
+#include <iostream>
+
+
+class Colore
+{
+protected:
+	bool estNoir;
+	bool estRouge;
+public:
+	
+	Colore();
+	~Colore();
+	Colore(bool noir, bool rouge);
+	bool isBlack ();
+	bool isRed ();
+	bool isVide ();
+	void affichage ();
+	bool isEquals(Colore c);
+	
+	
+	
+
+	
+
+};
+
+
+
+Colore::~Colore()
+{
+
+}
+
+Colore::Colore()
+{
+	estNoir = false;
+	estRouge = false;
+
+}
+
+Colore::Colore(bool noir,bool rouge)
+{
+	estNoir = noir;
+	estRouge = rouge;
+}
+
+
+
+bool Colore::isRed ()
+{
+	if (estRouge && !estNoir)
+	{
+		return true;
+	}
+	else { return false; }
+
+}
+
+
+bool Colore::isBlack ()
+{
+	if (!estRouge && estNoir)
+	{
+		return true;
+	}
+	else { return false; }
+}
+
+
+bool Colore::isVide ()
+{
+	if ((!estRouge && !estNoir)|| (estRouge && estNoir))
+	{
+		return true;
+	}
+	else { return false; }
+}
+
+void Colore::affichage ()
+{
+	if (isBlack())
+	{
+		std::cout<<"N";
+	}
+	else { 
+		if (isRed())
+		{
+			std::cout<<"R";
+		}
+		else 
+		{
+			std::cout<<"0";
+		}
+	}
+	
+}
+
+bool Colore::isEquals(Colore c)
+{
+	if (c.isRed()&& isRed())
+	{
+		return true;
+	}
+	else {
+		if (c.isBlack() && isBlack())
+		{
+			return true;
+		}
+		else {
+			if (c.isVide() && isVide())
+			{
+			return true;
+			}
+			else {
+			return false;
+			}
+		}
+	}	
+}
+
+
+int main ()
+
+{
+
+	Colore a = *(new Colore(true,true));
+	Colore b = *(new Colore(false,false));
+	Colore c = *(new Colore(true,false));
+	Colore d = *(new Colore(false,true));
+	Colore e = *(new Colore(true,false));
+	std::cout<<a.isEquals(b);
+	std::cout<<std::endl;
+	std::cout<<a.isEquals(c);
+	std::cout<<std::endl;
+	std::cout<<a.isEquals(d);
+	std::cout<<std::endl;
+	std::cout<<a.isEquals(e);
+	std::cout<<std::endl;
+	std::cout<<a.isEquals(a);
+	std::cout<<std::endl;
+	std::cout<<d.isEquals(e);
+	std::cout<<std::endl;
+	std::cout<<d.isEquals(b);
+	std::cout<<std::endl;
+	std::cout<<c.isEquals(e);
+	std::cout<<std::endl;
+
+
+
+
+
+}
+
+#endif       

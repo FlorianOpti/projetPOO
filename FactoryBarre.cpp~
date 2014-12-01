@@ -1,0 +1,34 @@
+
+#ifndef _FacBA_
+#define _FacBA_
+class FactoryBarre : FactoryGraphique
+{
+public:
+<<<<<<< HEAD
+	ElemGraph factoryMethod (std::string type);
+=======
+	ElemGraph* factoryMethod (string type);
+>>>>>>> 8d5349f4eefbcf1fd5a854a1d1c7363a3b53fdcd
+	FactoryBarre();
+	~FactoryBarre();
+};
+
+FactoryBarre ::FactoryBarre(){}
+FactoryBarre ::~FactoryBarre(){};
+
+<<<<<<< HEAD
+ElemGraph FactoryBarre::factoryMethod (std::string type){
+=======
+ElemGraph* FactoryBarre::factoryMethod (string type){
+>>>>>>> 8d5349f4eefbcf1fd5a854a1d1c7363a3b53fdcd
+	if(type == "verticale"){
+		return new BarreVertic();
+	}else if(type == "horizontale"){
+		return new BarreHoriz();
+	}else if(type == "espace"){
+		return new Espace();
+	}else{
+		cout << "can t instanciate that Intercase\n";
+	}
+}
+#endif

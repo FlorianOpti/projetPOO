@@ -1,0 +1,10 @@
+<map id="ElemGraph" name="ElemGraph">
+<area shape="rect" id="node2" href="$classInterCase.html" title="{InterCase\n||+ affichage()\l+ toString()\l}" alt="" coords="191,197,285,289"/>
+<area shape="rect" id="node6" href="$classPion.html" title="{Pion\n|# color\l|+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="435,189,533,296"/>
+<area shape="rect" id="node3" href="$classBarreHoriz.html" title="{BarreHoriz\n||+ affichage()\l+ toString()\l+ getColore()\l}" alt="" coords="5,359,104,465"/>
+<area shape="rect" id="node4" href="$classBarreVertic.html" title="{BarreVertic\n||+ affichage()\l+ toString()\l+ getColore()\l}" alt="" coords="128,359,227,465"/>
+<area shape="rect" id="node5" href="$classEspace.html" title="{Espace\n||+ affichage()\l+ toString()\l+ getColore()\l}" alt="" coords="251,359,349,465"/>
+<area shape="rect" id="node7" href="$classPionN.html" title="{PionN\n||+ PionN()\l+ ~PionN()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="373,344,472,480"/>
+<area shape="rect" id="node8" href="$classPionR.html" title="{PionR\n||+ PionR()\l+ ~PionR()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="496,344,595,480"/>
+<area shape="rect" id="node9" href="$classPionV.html" title="{PionV\n||+ PionV()\l+ ~PionV()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="619,344,717,480"/>
+</map>

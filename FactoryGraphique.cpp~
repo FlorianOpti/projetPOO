@@ -1,0 +1,17 @@
+
+#ifndef _Fgrap_
+#define _Fgrap_
+class FactoryGraphique 
+{
+public:
+	virtual FactoryGraphique()=0;
+	virtual ~FactoryGraphique()=0;
+<<<<<<< HEAD
+	virtual ElemGraph factoryMethod (std::string type)=0;
+=======
+	virtual ElemGraph* factoryMethod (std::string type)=0;
+>>>>>>> 8d5349f4eefbcf1fd5a854a1d1c7363a3b53fdcd
+};
+
+#endif
+

@@ -1,0 +1,21 @@
+#ifndef _Phase_
+#define _Phase_
+
+#include "Deplacement.cpp"
+#include "Placement.cpp"
+
+class Phase //(abstract)
+{
+public:
+	virtual void jouer ();
+protected:
+	Game game;
+
+public : 
+	Phase (Game g) : game(g) {} // ???
+	
+	
+};
+
+#endif
+

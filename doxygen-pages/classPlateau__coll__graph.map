@@ -1,0 +1,8 @@
+<map id="Plateau" name="Plateau">
+<area shape="rect" id="node2" href="$classSujet.html" title="{Sujet\n||+ Sujet()\l+ ~Sujet()\l+ notif()\l+ add()\l+ supp()\l}" alt="" coords="5,348,84,484"/>
+<area shape="rect" id="node3" href="$classFactoryPion.html" title="{FactoryPion\n||+ factoryMethod()\l+ FactoryPion()\l+ ~FactoryPion()\l}" alt="" coords="204,148,329,255"/>
+<area shape="rect" id="node6" href="$classMatrice.html" title="{Matrice\n||+ Matrice()\l+ ~Matrice()\l+ setPion()\l+ estVide()\l+ indice()\l+ pion()\l+ LignePleine()\l}" alt="" coords="109,333,219,499"/>
+<area shape="rect" id="node4" href="$classFactoryGraphique.html" title="{FactoryGraphique\n||+ factoryMethod()\l}" alt="" coords="204,5,329,83"/>
+<area shape="rect" id="node5" href="$classAffichage.html" title="{Affichage\n||+ Affichage()\l+ ~Affichage()\l+ update()\l}" alt="" coords="321,363,425,469"/>
+<area shape="rect" id="node7" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="65,133,180,269"/>
+</map>

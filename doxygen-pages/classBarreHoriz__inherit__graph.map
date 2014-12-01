@@ -1,0 +1,4 @@
+<map id="BarreHoriz" name="BarreHoriz">
+<area shape="rect" id="node2" href="$classInterCase.html" title="{InterCase\n||+ affichage()\l+ toString()\l}" alt="" coords="15,190,109,282"/>
+<area shape="rect" id="node3" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="5,5,120,141"/>
+</map>

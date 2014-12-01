@@ -1,0 +1,5 @@
+<map id="Phase" name="Phase">
+<area shape="rect" id="node2" href="$classDeplacement.html" title="{Deplacement\n||+ jouer()\l+ faire_jouer()\l+ Deplacement()\l}" alt="" coords="5,176,123,283"/>
+<area shape="rect" id="node3" href="$classFinduJeu.html" title="{FinduJeu\n||+ jouer()\l+ FinduJeu()\l}" alt="" coords="147,183,241,275"/>
+<area shape="rect" id="node4" href="$classPlacement.html" title="{Placement\n||+ jouer()\l+ faire_jouer()\l+ Placement()\l}" alt="" coords="267,176,371,283"/>
+</map>

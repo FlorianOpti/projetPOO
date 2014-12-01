@@ -1,0 +1,34 @@
+#ifndef _FacP_
+#define _FacP_
+#include<string.h>
+class FactoryPion : FactoryGraphique 
+{
+public:
+<<<<<<< HEAD
+	ElemGraph factoryMethod (std::string type);
+=======
+	ElemGraph* factoryMethod (string type);
+>>>>>>> 8d5349f4eefbcf1fd5a854a1d1c7363a3b53fdcd
+	FactoryPion();
+	~FactoryPion();
+};
+
+FactoryPion ::FactoryPion(){}
+FactoryPion ::~FactoryPion(){};
+
+<<<<<<< HEAD
+ElemGraph FactoryPion::factoryMethod (std::string type){
+=======
+ElemGraph* FactoryPion::factoryMethod (string type){
+>>>>>>> 8d5349f4eefbcf1fd5a854a1d1c7363a3b53fdcd
+	if(type == "rouge"){
+		return new PionR();
+	}else if(type == "noir"){
+		return new PionN();
+	}else if(type == "vide"){
+		return new PionV();
+	}else{
+		cout << "can t instanciate that Pion\n";
+	}
+}
+#endif

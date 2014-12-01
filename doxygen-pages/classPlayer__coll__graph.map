@@ -1,0 +1,3 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node2" href="$classColore.html" title="{Colore\n|# estNoir\l# estRouge\l|+ Colore()\l+ ~Colore()\l+ Colore()\l+ isBlack()\l+ isRed()\l+ isVide()\l+ affichage()\l+ isEquals()\l}" alt="" coords="10,5,104,200"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Matrice" name="Matrice">
+<area shape="rect" id="node2" href="$classFactoryPion.html" title="{FactoryPion\n||+ factoryMethod()\l+ FactoryPion()\l+ ~FactoryPion()\l}" alt="" coords="5,148,131,255"/>
+<area shape="rect" id="node3" href="$classFactoryGraphique.html" title="{FactoryGraphique\n||+ factoryMethod()\l}" alt="" coords="5,5,131,83"/>
+<area shape="rect" id="node4" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="155,133,269,269"/>
+</map>

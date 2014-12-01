@@ -1,0 +1,6 @@
+<map id="InterCase" name="InterCase">
+<area shape="rect" id="node3" href="$classBarreHoriz.html" title="{BarreHoriz\n||+ affichage()\l+ toString()\l+ getColore()\l}" alt="" coords="5,331,104,437"/>
+<area shape="rect" id="node4" href="$classBarreVertic.html" title="{BarreVertic\n||+ affichage()\l+ toString()\l+ getColore()\l}" alt="" coords="128,331,227,437"/>
+<area shape="rect" id="node5" href="$classEspace.html" title="{Espace\n||+ affichage()\l+ toString()\l+ getColore()\l}" alt="" coords="251,331,349,437"/>
+<area shape="rect" id="node2" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="120,5,235,141"/>
+</map>
