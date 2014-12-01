@@ -4,6 +4,7 @@
 
 #include "PionV.cpp"
 #include "Color.cpp"
+#include "FactoryPion.cpp"
 #include<cassert>
 
 //Gerer les constructeur de Pion
@@ -14,13 +15,15 @@ class Matrice
 public:
 	Matrice();
 	~Matrice();
-	Pion* matr[24];
+	
 	bool setPion (Pion *pion, int position );
 	bool estVide (int position);
 	int indice(Pion *pion);
 	Pion* pion(int x);
-public :
 	bool LignePleine (int num_ligne,Colore color);
+private :
+	Pion* matr[24];
+	FactoryPion* fac;
 };
 int Matrice::indice(Pion* pion){
 	for(int i =0; i<24; i++){
@@ -55,10 +58,11 @@ bool Matrice::setPion(Pion *pion,int position)
 
 Matrice::Matrice()
 {
+	fac = new FactoryPion();
 	int i;
 	for(i=0; i<24; ++i)
 	{
-		matr[i] = new PionV();
+		matr[i] = fac->factoryMethod("vide");
 	}
 }
 

@@ -1,5 +1,7 @@
 #ifndef _BarreHoriz_
 #define _BarreHoriz_
+#include <string>
+#include "InterCase.cpp"
 class BarreHoriz : InterCase 
 {
 public:

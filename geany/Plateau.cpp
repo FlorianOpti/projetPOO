@@ -4,15 +4,19 @@
 #include "Matrice.cpp"
 #include "Color.cpp"
 #include<cmath>
+#include "AffichageConcret1.cpp"
+
+#include "FactoryPion.cpp"
 
 
 
-class Plateau : Observable
+class Plateau : Sujet
 {
 protected:
 	Matrice matriceH;
 	Matrice matriceV;
 	Affichage aff;
+	FactoryPion* fac;
 	
 	int conv(int x){
 		assert(x>-1 and x<24);
@@ -84,6 +88,7 @@ public:
 		a = *(new AffichageConcret1());
 		matriceH = *(new Matrice());
 		matriceV = *(new Matrice());
+		fac = new FactoryPion();
 	}
 	
 	
@@ -123,7 +128,7 @@ public:
 		bool effectue = false;
 		if(!matriceH.estVide(pos)){
 			delete matriceH.pion(pos);
-			Pion* nouvPionVide = new PionV();
+			Pion* nouvPionVide = fac->factoryMethod("vide");
 			effectue = matriceH.setPion(nouvPionVide, pos);
 			effectue = effectue and matriceV.setPion(nouvPionVide, conv(pos));
 			
@@ -137,7 +142,7 @@ public:
 		int pos = matriceH.indice(p); 
 		if(!matriceH.estVide(pos)){
 			delete p;
-			Pion* nouvPionVide = new PionV();
+			Pion* nouvPionVide = fac->factoryMethod("vide");
 			effectue = matriceH.setPion(nouvPionVide, pos);
 			effectue = effectue and matriceV.setPion(nouvPionVide, conv(pos));
 			
@@ -279,7 +284,7 @@ public:
 	//POINTEUR VERS FONCTION !!!
 	
 	typedef int(*Fonction)(int);
-	
+	// to do renvoyer un booleen pour utiliser dans Dplacement.cpp
 	void Plateau::dep(Pion *p, Fonction direction){
 		int indice = matriceH.indice(p);
 		int down = direction(indice);
