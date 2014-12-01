@@ -530,7 +530,11 @@ bool Matrice::setPion(ElemGraph*pion,int position)
 			return true;
 }
 
-
+/*!
+ * \brief Constructeur de Matrice, remplit la matrice d'element vide
+ * \param
+ * \return
+ */	
 Matrice::Matrice()
 {
 	fac = new FactoryPion();
@@ -540,11 +544,19 @@ Matrice::Matrice()
 		matr[i] = fac->factoryMethod("vide");
 	}
 }
-
+/*!
+ * \brief Deconstructeur de Matrcice
+ * \param
+ * \return
+ */	
 Matrice::~Matrice()
 {
 }
-
+/*!
+ * \brief renvoie true si la ligne donné est remplie d'element graphique de la couleur donné en parametre
+ * \param	num_Ligne numero de la ligne a verifier color couleur a verifier
+ * \return	bool
+ */	
 bool Matrice::LignePleine (int num_Ligne,Colore color)
 {
 	if (color.isBlack())
@@ -591,8 +603,11 @@ bool Matrice::LignePleine (int num_Ligne,Colore color)
 	}
 	return false;
 }
-
-#endif
+/*!
+ * \brief Convertie une position horizontal en position verticale, obliger de faire au cas par cas, renvoie l'entier position convertit
+ * \param	x position a convertir
+ * \return	entier 
+ */	
 int conv(int x){
 		assert(x>-1 and x<24);
 		int res = x;
@@ -641,8 +656,17 @@ public:
 	FactoryBarre();
 	~FactoryBarre();
 };
-
+/*!
+ * \brief Constructeur de factorybarre
+ * \param
+ * \return
+ */	
 FactoryBarre ::FactoryBarre(){}
+/*!
+ * \brief Deconstructeur de factorybarre
+ * \param
+ * \return
+ */	
 FactoryBarre ::~FactoryBarre(){};
 
 class Affichage
@@ -669,10 +693,6 @@ public:
 	void placPion(Player j, int pos);
 	bool suppPion(int pos);
 	bool suppPion(ElemGraph* p);
-	/*int getRight(int x);
-	static int getDown(int x);
-	static int getLeft(int x);
-	static int getUp(int x);*/
 	void dep(ElemGraph*p, Fonction direction);
 	void dep(int indice, Fonction direction);
 	ElemGraph* getPion(int indice);
@@ -687,20 +707,28 @@ public:
 };
 
 
-#ifndef _AffC1_
-#define _AffC1_
+
 class AffichageConcret1 : public Affichage
 {
 private:
 	Plateau* plat;
 	FactoryBarre fac;
 public:
+/*!
+ * \brief Constructeur de Affichage Concret, prend le plateau a afficher en parametre
+ * \param p plateau aa afficher
+ * \return
+ */	
 	AffichageConcret1(Plateau* p){
 		plat=p;
 		fac = *(new FactoryBarre());
 	}
 	 ~AffichageConcret1(){delete plat;}
-
+/*!
+ * \brief affiche le plateau observer
+ * \param
+ * \return
+ */	
 	 void update (){
 	 	Matrice m = plat->getMatrice();
 	 	ElemGraph* vertic = fac.factoryMethod("verticale");
@@ -763,33 +791,32 @@ public:
 
 	 }
 };
-#endif
-#ifndef _BarreVertic_
-#define _BarreVertic_
-#include <string>
+
 class BarreVertic : public InterCase
 {
 public:
 	void affichage ();
 	std::string toString();
-	
+/*!
+ * \brief getteur de la couleur
+ * \param
+ * \return Colore
+ */		
 	Colore getColore(){return *(new Colore());}
 };
 
 void BarreVertic ::affichage (){
-
+	std::cout<<"|";
 }
 
-
+/*!
+ * \brief Renvoie la barre verticale en chaine de caractere
+ * \param
+ * \return string
+ */	
 std::string BarreVertic ::toString(){
 	return "|";
 }
-#endif
-
-
-
-#ifndef Player_
-#define Player_
 
 using namespace std;
 
@@ -804,33 +831,58 @@ public:
 
 	~Player(){}
 
-
+/*!
+ * \brief Constructeur de player, sans parametre, met couleur vide
+ * \param
+ * \return joueur
+ */	
 	Player(){
 		couleur = *(new Colore());
 		nbPion = 0;
 
 	}
+/*!
+ * \brief Constructeur de Player qui prend sa couleur en parametre
+ * \param c Colroe du joueur
+ * \return 
+ */	
 	Player(Colore c){
 		couleur = c;
 		nbPion = 9;
 	}
-
+/*!
+ * \brief Affiche la couleur du joueur puis son nombre de pion
+ * \param
+ * \return
+ */	
 	void affichage(){
 		cout << "joueur de couleur ";
 		couleur.affichage();
 		cout << " avec nbPion = "<< nbPion << endl;
 	}
-
+/*!
+ * \brief getteur du nombre de pion
+ * \param
+ * \return entier
+ */	
 	int getNbPion ()
 	{
 		return nbPion;
 	}
-
+/*!
+ * \brief Décrémente le nombre de pion du joueur
+ * \param
+ * \return
+ */	
 	void perdrePion ()
 	{
 		nbPion--;
 	}
-
+/*!
+ * \brief getteur de la couleur
+ * \param
+ * \return colore
+ */	
 	Colore getColore()
 	{
 		return couleur;
@@ -840,9 +892,7 @@ public:
 };
 
 
-#endif
 
-#include <iostream>
 
 class Phase //(abstract)
 {
@@ -854,7 +904,7 @@ public :
 	virtual void jouer ()=0;
   	Phase(){}
   	virtual ~Phase(){}
-	Phase (Game* g) : game(g) {} // ???
+	Phase (Game* g) : game(g) {}
 
 
 };
@@ -892,8 +942,7 @@ public:
 };
 
 
-#ifndef fdj
-#define fdj
+
 
 
 class FinduJeu : public Phase
@@ -905,11 +954,6 @@ public:
 	}
 
 };
-#endif
-
-
-#ifndef _Game_
-#define _Game_
 
 
 
@@ -942,39 +986,70 @@ public :
 		phaseCourante = phasePlacement;
 		
 	}
-
+/*!
+ * \brief fais jouer la phase courante
+ * \param
+ * \return
+ */	
 	void play ()
 	{
 		phaseCourante->jouer();
 	}
+/*!
+ * \brief getteur du joueur 1
+ * \param
+ * \return joueur
+ */	
 	Player getJ1(){
 		return joueur1;
 	}
+	
+/*!
+ * \brief getteur du joueur 2
+ * \param
+ * \return joueur
+ */	
 	Player getJ2(){
 		return joueur2;
 	}
+/*!
+ * \brief getteur du plateau de cette game
+ * \param
+ * \return plateau
+ */	
 	Plateau* getPlateau(){
 		return plateau;
 	}
-
+/*!
+ * \brief getteur de la phase deplacement
+ * \param
+ * \return phase
+ */	
 	Phase* getPhaseDeplacement()
 	{
 		return phaseDeplacement;
 	}
+/*!
+ * \brief getteur de la phase Findujeu
+ * \param
+ * \return phase
+ */	
 	Phase* getPhaseFinduJeu()
 	{
 		return phaseFinduJeu;
 	}
+/*!
+ * \brief Mets la phase en parametre en phase courante
+ * \param p phase a mettre
+ * \return
+ */	
 	void setPhase(Phase* p){
 		phaseCourante = p;
 	}
 
 };
 
-#endif
 
-#ifndef _espace_
-#define _espace_
 class Espace : public InterCase
 {
 public:
@@ -984,6 +1059,11 @@ public:
 
 };
 
+/*!
+ * \brief Affichage de espace
+ * \param
+ * \return
+ */	
 void Espace ::affichage (){
 
 }
@@ -991,17 +1071,11 @@ std::string Espace ::toString(){
 	return " ";
 }
 
-#endif
-
-#ifndef _FacBA_
-#define _FacBA_
-#include<iostream>
-
-
-
-
-
-
+/*!
+ * \brief retourne un pointeur ver un element graphique barre crée, verticale ou horizontale selon la chaine de caractere en parmaetre
+ * \param type type de barre qu'on veut
+ * \return	ElemGraph*
+ */	
 ElemGraph* FactoryBarre::factoryMethod (std::string type){
   ElemGraph* res;
 	if(type == "verticale"){
@@ -1017,11 +1091,13 @@ ElemGraph* FactoryBarre::factoryMethod (std::string type){
 
 	return res;
 }
-#endif
 
 
-
-
+/*!
+ * \brief Fais jouer la phase Fin du jeu
+ * \param
+ * \return
+ */	
 void FinduJeu::jouer()
 {
 
@@ -1039,24 +1115,11 @@ void FinduJeu::jouer()
 
 
 
-
-
-
-
-
-
-
-/*
-git pull
-git commit -am "truc"
-git push
-*/
-
-#ifndef _BarreHoriz_
-#define _BarreHoriz_
-
-
-
+/*!
+ * \brief Affichage de barrehoriz
+ * \param
+ * \return
+ */	
 void BarreHoriz ::affichage (){
 
 }
@@ -1064,16 +1127,24 @@ std::string BarreHoriz ::toString(){
 	return "_";
 }
 
-#endif
 
 
 
+/*!
+ * \brief Deconstructeur de plateau
+ * \param
+ * \return
+ */	
 	Plateau::~Plateau(){
 		delete &matriceH;
 		delete &matriceV;
 	}
 
-
+/*!
+ * \brief Constructeur de plateau
+ * \param
+ * \return
+ */	
 	Plateau::Plateau(){
 		aff = new AffichageConcret1(this);
 		matriceH = *(new Matrice());
@@ -1082,8 +1153,12 @@ std::string BarreHoriz ::toString(){
 		notif();
 	}
 
-
-	bool Plateau::placPion(ElemGraph*p, int pos){
+/*!
+ * \brief Place l'element en parametre a  la position en parametre, renvoie true si résussi, false sinon
+ * \param p element a placer pos position a placé
+ * \return bool
+ */	
+bool Plateau::placPion(ElemGraph*p, int pos){
 
 		bool effectue = false;
 		if(matriceH.estVide(pos)){
@@ -1094,9 +1169,14 @@ std::string BarreHoriz ::toString(){
 		}
 		return effectue;
 
-	}
+}
 
-	void Plateau::placPion(Player j,int pos)
+/*!
+ * \brief Place un pion
+ * \param j propriétaire du pion pos position du pion a deplacer
+ * \return
+ */	
+void Plateau::placPion(Player j,int pos)
 	{
 		Colore c = j.getColore();
 	
@@ -1110,11 +1190,15 @@ std::string BarreHoriz ::toString(){
 			placPion(fac->factoryMethod("rouge"),pos);
 		}
 
-	}
+}
 
 
-
-	bool Plateau::suppPion(int pos){
+/*!
+ * \brief Supprime un element du plateau, renvoie vrai si supprimer, sinon faux
+ * \param p position de l'element a supprimer
+ * \return bool
+ */	
+bool Plateau::suppPion(int pos){
 		bool effectue = false;
 		if(!matriceH.estVide(pos)){
 			delete matriceH.pion(pos);
@@ -1125,8 +1209,14 @@ std::string BarreHoriz ::toString(){
 			std::cout<< " can't do that\n";
 		}
 		return effectue;
-	}
-	bool Plateau::suppPion(ElemGraph*p){
+}
+
+/*!
+ * \brief Supprime un element du plateau, renvoie vrai si supprimer, sinon faux
+ * \param p element a supprimer
+ * \return bool
+ */	
+bool Plateau::suppPion(ElemGraph*p){
 		bool effectue = false;
 		int pos = matriceH.indice(p);
 		if(!matriceH.estVide(pos)){
@@ -1139,9 +1229,13 @@ std::string BarreHoriz ::toString(){
 			std::cout<< " can't do that\n";
 		}
 		return effectue;
-	}
+}
 
-
+/*!
+ * \brief Renvoie -1 si pas de position a droite, ou la position de l'emplacement a droite, de l'élement
+ * \param x position a tester 
+ * \return entier
+ */	
 	int getRight(int x){ // passer le code en matrice horizontale
 		int res = x;
 		x++;
@@ -1151,6 +1245,11 @@ std::string BarreHoriz ::toString(){
 			return res+1;
 		}
 	}
+/*!
+ * \brief Renvoie -1 si pas de position en bas, ou sinon la position de l'emplacement en bas, de l'élement
+ * \param x position a tester 
+ * \return entier
+ */	
 	int getDown(int x){
 		int res = x;
 		x++;
@@ -1163,6 +1262,11 @@ std::string BarreHoriz ::toString(){
 		}
 
 	}
+/*!
+ * \brief Renvoie -1 si pas de position a gauche, ou la position de l'emplacement a gauche, de l'élement
+ * \param x position a tester 
+ * \return entier
+ */	
 	int getLeft(int x){
 		int res = x;
 		x++;
@@ -1172,6 +1276,11 @@ std::string BarreHoriz ::toString(){
 			return (res-1);
 		}
 	}
+/*!
+ * \brief Renvoie -1 si pas de position en haut, ou la position de l'emplacement en haut, de l'élement
+ * \param x position a tester 
+ * \return entier
+ */	
 	int getUp(int x){
 		int res = x;
 		x++;
@@ -1182,99 +1291,15 @@ std::string BarreHoriz ::toString(){
 		}else{
 			return conv (res-1);
 		}
-	}
-	/*void depRight(Pion pion){
-		// si on peut se deplacer a droite ( une case a droite et innocupp\E9e)
-		int indice = matriceH.indice(&pion);
-		int right = getRight(indice);
-		if(right != -1){
-			Pion* pright = matriceH.pion(right);
-			if(isVide(*pright)){
-				PionV temp = matriceH.pion(right);
-				// sauvegarde du pionvide ou on va bouger
-
-				matriceH.setPion (&pion, right);
-				matriceH.setPion (temp, indice);
-
-				matriceV.setPion (&pion, conv(right));
-				matriceV.setPion (temp, conv(indice));
-			}else{
-				std::cout<< " can't go right\n";
-			}
-		}else{
-			std::cout<< " can't go right\n";
-		}
-	}
-
-	void depLeft(Pion p){
-		int indice = matriceH.indice(&pion);
-		int left = getLeft(indice);
-		if(left != -1){
-			Pion* pleft = matriceH.pion(left);
-			if(isVide(*pleft)){
-				PionV temp = matriceH.pion(left);
-				// sauvegarde du pionvide ou on va bouger
-
-				matriceH.setPion (&pion, left);
-				matriceH.setPion (temp, indice);
-
-				matriceV.setPion (&pion, conv(left));
-				matriceV.setPion (temp, conv(indice));
-			}else{
-				std::cout<< " can't go left\n";
-			}
-		}else{
-			std::cout<< " can't go left\n";
-		}
-	}
-	void depUp(Pion p){
-		int indice = matriceH.indice(&pion);
-		int up = getUp(indice);
-		if(up != -1){
-			Pion* pup = matriceH.pion(up);
-			if(isVide(*pup)){
-				PionV temp = matriceH.pion(up);
-				// sauvegarde du pionvide ou on va bouger
-
-				matriceH.setPion (&pion, up);
-				matriceH.setPion (temp, indice);
-
-				matriceV.setPion (&pion, conv(up));
-				matriceV.setPion (temp, conv(indice));
-			}else{
-				std::cout<< " can't go up\n";
-			}
-		}else{
-			std::cout<< " can't go up\n";
-		}
-	}
-	void depDown(Pion p){
-		int indice = matriceH.indice(&pion);
-		int down = getDown(indice);
-		if(down != -1){
-			Pion* pdown = matriceH.pion(down);
-			if(isVide(*pdown)){
-				PionV temp = matriceH.pion(down);
-				// sauvegarde du pionvide ou on va bouger
-
-				matriceH.setPion (&pion, down);
-				matriceH.setPion (temp, indice);
-
-				matriceV.setPion (&pion, conv(down));
-				matriceV.setPion (temp, conv(indice));
-			}else{
-				std::cout<< " can't go down\n";
-			}
-		}else{
-			std::cout<< " can't go down\n";
-		}
-	}
-	*/
-	//POINTEUR VERS FONCTION !!!
+}
 
 	
-	// to do renvoyer un booleen pour utiliser dans Dplacement.cpp
-	void Plateau::dep(ElemGraph*p, Fonction direction){
+/*!
+ * \brief deplace l'element donné dans la direction donné
+ * \param	p l'element	direction direction  a deplacer 
+ * \return
+ */	
+void Plateau::dep(ElemGraph*p, Fonction direction){
 		int indice = matriceH.indice(p);
 		int down = direction(indice);
 		if(down != -1){
@@ -1294,38 +1319,77 @@ std::string BarreHoriz ::toString(){
 		}else{
 			std::cout<< " can't do that\n";
 		}
-	}
-	void Plateau::dep(int indice, Fonction direction){
+}
+/*!
+ * \brief deplace l'element a la position donné dans la direction donné
+ * \param	indice position de l'element	direction direction  a deplacer 
+ * \return
+ */	
+void Plateau::dep(int indice, Fonction direction){
 		ElemGraph*p = matriceH.pion(indice);
 		dep(p,direction);
-	}
+}
 
-	ElemGraph* Plateau::getPion(int indice){
+
+
+/*!
+ * \brief Renvoie l'element graphique a la position passé en paramètre
+ * \param indice position de l'element cherché
+ * \return element graphique a la position indice
+ */	
+ElemGraph* Plateau::getPion(int indice){
 		return matriceH.pion(indice);
-	}
+}
 
-	int Plateau::getIndice(ElemGraph*p){
+/*!
+ * \brief Renvoie la position de l'element graphique passé en parametre
+ * \param p element dont on veut la position
+ * \return entier, position de p
+ */	
+int Plateau::getIndice(ElemGraph*p){
 		return matriceH.indice(p);
 	}
 
-	bool Plateau::LignePleine (int indice){
+/*!
+ * \brief Renvoie true si la ligne de l'entier en parametre est remplie de pion de la même couleur
+
+ * \param indice position que l'on souhaite tester
+ * \return un bool
+ */
+bool Plateau::LignePleine (int indice){
 		ElemGraph* pion = matriceH.pion(indice);
 		indice = indice /3;
-
 		return matriceH.LignePleine(indice, pion->getColore());
 	}
-	bool Plateau::ColonnePleine (int indice){
+
+/*!
+ * \brief Renvoie true si la colonne du entier en parametre est remplie de pion de la même couleur
+ * \param indice position que l'on souhaite tester
+ * \return un bool 
+ */	
+bool Plateau::ColonnePleine (int indice){
 		ElemGraph* pion = matriceH.pion(indice);
 		indice = conv(indice);
 		indice = indice /3;
 
 		return matriceV.LignePleine(indice,pion->getColore());
 	}
-	Matrice Plateau::getMatrice(){
+
+/*!
+ * \brief getteur de matriceH de plateau
+
+ * \param
+ * \return this.matriceH
+ */	
+Matrice Plateau::getMatrice(){
 		return matriceH;
 	}
-
-	void Plateau::notif (){
+/*!
+ * \brief Notifie les observers
+ * \param
+ * \return
+ */
+void Plateau::notif (){
 		/*for (Affichage a : aff){
 			a.update();
 		}*/
@@ -1333,6 +1397,12 @@ std::string BarreHoriz ::toString(){
 	}
 
 
+/*!
+ * \brief Fais jouer la phase deplacement
+
+ * \param
+ * \return
+ */
 void Deplacement::jouer()
 {
 	std::cout<<"Phase de d\E9placement "<<std::endl;
@@ -1359,9 +1429,9 @@ void Deplacement::jouer()
 
 
 /*!
- * \brief description
- * \param joueur description
- * \return truc
+ * \brief Fais jouer un tour de Deplacement au joueur
+ * \param joueur Joueur a faire jouer
+ * \return
  */
 void Deplacement::faire_jouer(Player joueur)
 {
@@ -1515,6 +1585,13 @@ void Deplacement::faire_jouer(Player joueur)
 	}
 }
 
+/*!
+ * \brief Fais jouer la phase placement
+
+ * \param
+ * \return
+ */
+
 void Placement::jouer(){
 		Player j1 = game->getJ1();
 		Player j2 = game->getJ2();
@@ -1526,6 +1603,20 @@ void Placement::jouer(){
 		game->setPhase(game->getPhaseDeplacement());
 		game->play();
 	}
+
+
+
+
+
+
+
+
+
+/*!
+ * \brief Fais joueur un  joueur un tour de la phase Placement 
+ * \param joueur Joueur a faire jouer
+ * \return 
+ */
 void Placement::faire_jouer(Player joueur)
 {
 	int choix;
