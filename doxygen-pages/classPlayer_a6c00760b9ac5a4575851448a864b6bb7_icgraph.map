@@ -1,4 +1,4 @@
 <map id="Player::affichage" name="Player::affichage">
-<area shape="rect" id="node2" href="$classDeplacement.html#a21239e3b70405edc2b248504b7bba5a0" title="description " alt="" coords="183,5,315,46"/>
-<area shape="rect" id="node3" href="$classPlacement.html#a5229ed32ecadbb3983bbbd82d1ab04de" title="Placement::faire_jouer" alt="" coords="173,71,325,97"/>
+<area shape="rect" id="node2" href="$classDeplacement.html#a21239e3b70405edc2b248504b7bba5a0" title="Fais jouer un tour de Deplacement au joueur. " alt="" coords="183,5,315,46"/>
+<area shape="rect" id="node3" href="$classPlacement.html#a5229ed32ecadbb3983bbbd82d1ab04de" title="Fais joueur un joueur un tour de la phase Placement. " alt="" coords="173,71,325,97"/>
 </map>

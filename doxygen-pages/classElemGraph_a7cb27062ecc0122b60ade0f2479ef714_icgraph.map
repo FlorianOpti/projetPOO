@@ -1,5 +1,5 @@
 <map id="ElemGraph::getColore" name="ElemGraph::getColore">
 <area shape="rect" id="node2" href="$classMatrice.html#a502fc912778b891d7fcefef6e34ca96a" title="Matrice::estVide" alt="" coords="227,5,344,32"/>
-<area shape="rect" id="node3" href="$classPlateau.html#a679c6e475d48dd4fad36fe40a8a02b7b" title="Plateau::LignePleine" alt="" coords="215,56,356,83"/>
-<area shape="rect" id="node4" href="$classPlateau.html#a88ef20845e099bd1d6bc1d518352b922" title="Plateau::ColonnePleine" alt="" coords="206,107,365,133"/>
+<area shape="rect" id="node3" href="$classPlateau.html#a679c6e475d48dd4fad36fe40a8a02b7b" title="Renvoie true si la ligne de l&#39;entier en parametre est remplie de pion de la même couleur. " alt="" coords="215,56,356,83"/>
+<area shape="rect" id="node4" href="$classPlateau.html#a88ef20845e099bd1d6bc1d518352b922" title="Renvoie true si la colonne du entier en parametre est remplie de pion de la même couleur. " alt="" coords="206,107,365,133"/>
 </map>

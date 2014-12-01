@@ -1,7 +1,7 @@
 <map id="Colore::isVide" name="Colore::isVide">
 <area shape="rect" id="node2" href="$classColore.html#af2d9d5c207449684283aa697add4d381" title="Colore::isEquals" alt="" coords="169,52,287,79"/>
-<area shape="rect" id="node3" href="$classDeplacement.html#a21239e3b70405edc2b248504b7bba5a0" title="description " alt="" coords="357,5,489,46"/>
-<area shape="rect" id="node4" href="$classPlacement.html#a5229ed32ecadbb3983bbbd82d1ab04de" title="Placement::faire_jouer" alt="" coords="347,81,499,108"/>
+<area shape="rect" id="node3" href="$classDeplacement.html#a21239e3b70405edc2b248504b7bba5a0" title="Fais jouer un tour de Deplacement au joueur. " alt="" coords="357,5,489,46"/>
+<area shape="rect" id="node4" href="$classPlacement.html#a5229ed32ecadbb3983bbbd82d1ab04de" title="Fais joueur un joueur un tour de la phase Placement. " alt="" coords="347,81,499,108"/>
 <area shape="rect" id="node5" href="$classMatrice.html#a502fc912778b891d7fcefef6e34ca96a" title="Matrice::estVide" alt="" coords="169,153,287,180"/>
-<area shape="rect" id="node6" href="$classMatrice.html#ab1bbef8460d8b65e18d2eced9b14f7d6" title="Matrice::LignePleine" alt="" coords="158,204,298,231"/>
+<area shape="rect" id="node6" href="$classMatrice.html#ab1bbef8460d8b65e18d2eced9b14f7d6" title="renvoie true si la ligne donné est remplie d&#39;element graphique de la couleur donné en parametre ..." alt="" coords="158,204,298,231"/>
 </map>

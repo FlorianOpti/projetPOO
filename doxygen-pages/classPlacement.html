@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,8 +108,10 @@ Graphe de collaboration de Placement:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a5d0478418c97ab61bb4f9444b437030c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlacement.html#a5d0478418c97ab61bb4f9444b437030c">jouer</a> ()</td></tr>
+<tr class="memdesc:a5d0478418c97ab61bb4f9444b437030c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fais jouer la phase placement.  <a href="#a5d0478418c97ab61bb4f9444b437030c">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a5d0478418c97ab61bb4f9444b437030c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5229ed32ecadbb3983bbbd82d1ab04de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlacement.html#a5229ed32ecadbb3983bbbd82d1ab04de">faire_jouer</a> (<a class="el" href="classPlayer.html">Player</a> joueur)</td></tr>
+<tr class="memdesc:a5229ed32ecadbb3983bbbd82d1ab04de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fais joueur un joueur un tour de la phase <a class="el" href="classPlacement.html">Placement</a>.  <a href="#a5229ed32ecadbb3983bbbd82d1ab04de">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a5229ed32ecadbb3983bbbd82d1ab04de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69ef38ed2724288325dc873ae4f7f551"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlacement.html#a69ef38ed2724288325dc873ae4f7f551">Placement</a> (<a class="el" href="classGame.html">Game</a> *g)</td></tr>
 <tr class="separator:a69ef38ed2724288325dc873ae4f7f551"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,12 +169,21 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Fais joueur un joueur un tour de la phase <a class="el" href="classPlacement.html">Placement</a>. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>Joueur a faire jouer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlacement_a5229ed32ecadbb3983bbbd82d1ab04de_cgraph.png" border="0" usemap="#classPlacement_a5229ed32ecadbb3983bbbd82d1ab04de_cgraph" alt=""/></div>
 <map name="classPlacement_a5229ed32ecadbb3983bbbd82d1ab04de_cgraph" id="classPlacement_a5229ed32ecadbb3983bbbd82d1ab04de_cgraph">
-<area shape="rect" id="node2" href="classPlayer.html#a6c00760b9ac5a4575851448a864b6bb7" title="Player::affichage" alt="" coords="207,5,327,32"/><area shape="rect" id="node3" href="classColore.html#a12bf6c7c37eb4f6a7ce12ac65f25f043" title="Colore::isVide" alt="" coords="380,56,484,83"/><area shape="rect" id="node4" href="classColore.html#af2d9d5c207449684283aa697add4d381" title="Colore::isEquals" alt="" coords="207,107,326,133"/><area shape="rect" id="node7" href="classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="Player::getColore" alt="" coords="205,157,328,184"/><area shape="rect" id="node5" href="classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="381,107,483,133"/><area shape="rect" id="node6" href="classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="377,157,487,184"/></map>
+<area shape="rect" id="node2" href="classPlayer.html#a6c00760b9ac5a4575851448a864b6bb7" title="Affiche la couleur du joueur puis son nombre de pion. " alt="" coords="207,5,327,32"/><area shape="rect" id="node3" href="classColore.html#a12bf6c7c37eb4f6a7ce12ac65f25f043" title="getter " alt="" coords="380,56,484,83"/><area shape="rect" id="node4" href="classColore.html#af2d9d5c207449684283aa697add4d381" title="Colore::isEquals" alt="" coords="207,107,326,133"/><area shape="rect" id="node7" href="classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="getteur de la couleur " alt="" coords="205,157,328,184"/><area shape="rect" id="node5" href="classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="381,107,483,133"/><area shape="rect" id="node6" href="classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="377,157,487,184"/></map>
 </div>
 </p>
 
@@ -199,6 +210,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
+<p>Fais jouer la phase placement. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="classPhase.html#a0850388f4e53b5c098015d708edde880">Phase</a>.</p>
 
 </div>
@@ -209,7 +228,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:08:00 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:10 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,3 +1,11 @@
 <map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
-<area shape="rect" id="node1" href="$classGame.html" title="Game" alt="" coords="6,5,63,32"/>
+<area shape="rect" id="node1" href="$classElemGraph.html" title="ElemGraph" alt="" coords="6,120,93,147"/>
+<area shape="rect" id="node2" href="$classInterCase.html" title="InterCase" alt="" coords="142,81,221,108"/>
+<area shape="rect" id="node6" href="$classPion.html" title="Pion" alt="" coords="157,183,205,209"/>
+<area shape="rect" id="node3" href="$classBarreHoriz.html" title="BarreHoriz" alt="" coords="271,5,355,32"/>
+<area shape="rect" id="node4" href="$classBarreVertic.html" title="BarreVertic" alt="" coords="270,56,357,83"/>
+<area shape="rect" id="node5" href="$classEspace.html" title="Espace" alt="" coords="280,107,347,133"/>
+<area shape="rect" id="node7" href="$classPionN.html" title="PionN" alt="" coords="284,157,343,184"/>
+<area shape="rect" id="node8" href="$classPionR.html" title="PionR" alt="" coords="284,208,343,235"/>
+<area shape="rect" id="node9" href="$classPionV.html" title="PionV" alt="" coords="285,259,342,285"/>
 </map>

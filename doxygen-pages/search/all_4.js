@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['dep',['dep',['../classPlateau.html#a354174db595b71d48a86af99a1f9cf37',1,'Plateau::dep(ElemGraph *p, Fonction direction)'],['../classPlateau.html#a3fa0a4040ee5f2cf6ebdf014f8cb2b05',1,'Plateau::dep(int indice, Fonction direction)']]],
-  ['deplacement',['Deplacement',['../classDeplacement.html',1,'Deplacement'],['../classDeplacement.html#a6a4c0503dd3fadbe43d9d73f66b9f5ad',1,'Deplacement::Deplacement()']]]
+  ['elemgraph',['ElemGraph',['../classElemGraph.html',1,'ElemGraph'],['../classElemGraph.html#ab34da777932c91348e9beb5967e910a8',1,'ElemGraph::ElemGraph()']]],
+  ['espace',['Espace',['../classEspace.html',1,'']]],
+  ['estnoir',['estNoir',['../classColore.html#adbece35828eb11db9c2c6329e041769b',1,'Colore']]],
+  ['estrouge',['estRouge',['../classColore.html#aaddf5c7f648f1943d1de8e6d6d40a12d',1,'Colore']]],
+  ['estvide',['estVide',['../classMatrice.html#a502fc912778b891d7fcefef6e34ca96a',1,'Matrice']]]
 ];

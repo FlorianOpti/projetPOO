@@ -1,4 +1,4 @@
 <map id="Plateau::ColonnePleine" name="Plateau::ColonnePleine">
-<area shape="rect" id="node2" href="$Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="264,5,315,32"/>
+<area shape="rect" id="node2" href="$Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="264,5,315,32"/>
 <area shape="rect" id="node3" href="$classElemGraph.html#a7cb27062ecc0122b60ade0f2479ef714" title="ElemGraph::getColore" alt="" coords="214,56,365,83"/>
 </map>

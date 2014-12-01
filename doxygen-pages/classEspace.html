@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,6 +108,7 @@ Graphe de collaboration de Espace:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a6bf021e83b1a3e75abc77686a03da824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEspace.html#a6bf021e83b1a3e75abc77686a03da824">affichage</a> ()</td></tr>
+<tr class="memdesc:a6bf021e83b1a3e75abc77686a03da824"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classAffichage.html">Affichage</a> de espace.  <a href="#a6bf021e83b1a3e75abc77686a03da824">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a6bf021e83b1a3e75abc77686a03da824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ab807754b615e14fbefcbf9f922bc48"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEspace.html#a9ab807754b615e14fbefcbf9f922bc48">toString</a> ()</td></tr>
 <tr class="separator:a9ab807754b615e14fbefcbf9f922bc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +142,14 @@ Fonctions membres publiques</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classAffichage.html">Affichage</a> de espace. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="classInterCase.html#a07d93005ffa0027c8e56a16a981b504c">InterCase</a>.</p>
 
 </div>
@@ -165,6 +174,8 @@ Fonctions membres publiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>donne la couleur de l'element </p>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classColore.html">Colore</a> de l'elem </dd></dl>
 
 <p>Implémente <a class="el" href="classElemGraph.html#a7cb27062ecc0122b60ade0f2479ef714">ElemGraph</a>.</p>
 
@@ -190,6 +201,8 @@ Fonctions membres publiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>transforme l'element graphique <a class="el" href="classInterCase.html">InterCase</a> en string ( pour l'affichage concret 1) </p>
+<dl class="section return"><dt>Renvoie</dt><dd>une string </dd></dl>
 
 <p>Implémente <a class="el" href="classInterCase.html#a6472b55469b46733c258392d925fa408">InterCase</a>.</p>
 
@@ -201,7 +214,7 @@ Fonctions membres publiques</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:07:59 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:09 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

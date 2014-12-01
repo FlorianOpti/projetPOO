@@ -1,5 +1,5 @@
 <map id="Plateau::placPion" name="Plateau::placPion">
-<area shape="rect" id="node2" href="$classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="Player::getColore" alt="" coords="179,5,301,32"/>
-<area shape="rect" id="node3" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="185,56,295,83"/>
-<area shape="rect" id="node4" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="189,107,291,133"/>
+<area shape="rect" id="node2" href="$classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="getteur de la couleur " alt="" coords="179,5,301,32"/>
+<area shape="rect" id="node3" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="185,56,295,83"/>
+<area shape="rect" id="node4" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="189,107,291,133"/>
 </map>

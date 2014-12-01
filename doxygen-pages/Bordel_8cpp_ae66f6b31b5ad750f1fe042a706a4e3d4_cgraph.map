@@ -1,4 +1,4 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="124,5,175,32"/>
-<area shape="rect" id="node3" href="$classGame.html#aa333825d0bca80e91e53c7e23f053405" title="Game::play" alt="" coords="105,56,194,83"/>
+<area shape="rect" id="node2" href="$Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="124,5,175,32"/>
+<area shape="rect" id="node3" href="$classGame.html#aa333825d0bca80e91e53c7e23f053405" title="fais jouer la phase courante " alt="" coords="105,56,194,83"/>
 </map>

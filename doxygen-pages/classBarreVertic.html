@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,8 +110,10 @@ Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a90154a870691fb37684b3240e813f805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBarreVertic.html#a90154a870691fb37684b3240e813f805">affichage</a> ()</td></tr>
 <tr class="separator:a90154a870691fb37684b3240e813f805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e8bb5b53274c69b9c8a43b093aabaa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBarreVertic.html#af9e8bb5b53274c69b9c8a43b093aabaa">toString</a> ()</td></tr>
+<tr class="memdesc:af9e8bb5b53274c69b9c8a43b093aabaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la barre verticale en chaine de caractere.  <a href="#af9e8bb5b53274c69b9c8a43b093aabaa">Plus de détails...</a><br/></td></tr>
 <tr class="separator:af9e8bb5b53274c69b9c8a43b093aabaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb2a3837c18ddb6381ac41025622e39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColore.html">Colore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBarreVertic.html#a6eb2a3837c18ddb6381ac41025622e39">getColore</a> ()</td></tr>
+<tr class="memdesc:a6eb2a3837c18ddb6381ac41025622e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de la couleur  <a href="#a6eb2a3837c18ddb6381ac41025622e39">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a6eb2a3837c18ddb6381ac41025622e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classElemGraph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classElemGraph')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classElemGraph.html">ElemGraph</a></td></tr>
 <tr class="memitem:ab34da777932c91348e9beb5967e910a8 inherit pub_methods_classElemGraph"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classElemGraph.html#ab34da777932c91348e9beb5967e910a8">ElemGraph</a> ()</td></tr>
@@ -140,6 +142,7 @@ Fonctions membres publiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>affiche l'élément (pour le debug) </p>
 
 <p>Implémente <a class="el" href="classInterCase.html#a07d93005ffa0027c8e56a16a981b504c">InterCase</a>.</p>
 
@@ -166,6 +169,14 @@ Fonctions membres publiques</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>getteur de la couleur </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td><a class="el" href="classColore.html">Colore</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="classElemGraph.html#a7cb27062ecc0122b60ade0f2479ef714">ElemGraph</a>.</p>
 
 </div>
@@ -191,6 +202,14 @@ Fonctions membres publiques</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Renvoie la barre verticale en chaine de caractere. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td>string </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="classInterCase.html#a6472b55469b46733c258392d925fa408">InterCase</a>.</p>
 
 </div>
@@ -201,7 +220,7 @@ Fonctions membres publiques</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:07:59 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:09 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

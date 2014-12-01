@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,32 +109,46 @@ Graphe de collaboration de Plateau:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a07026170529dd928238ee45de0a797d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a07026170529dd928238ee45de0a797d7">Plateau</a> ()</td></tr>
+<tr class="memdesc:a07026170529dd928238ee45de0a797d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de plateau.  <a href="#a07026170529dd928238ee45de0a797d7">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a07026170529dd928238ee45de0a797d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6ae72e4d7e9923f996c1247e6a6c8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">~Plateau</a> ()</td></tr>
+<tr class="memdesc:a0e6ae72e4d7e9923f996c1247e6a6c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deconstructeur de plateau.  <a href="#a0e6ae72e4d7e9923f996c1247e6a6c8b">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a0e6ae72e4d7e9923f996c1247e6a6c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af190791a86170f3dd476b31cf0c9aeb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#af190791a86170f3dd476b31cf0c9aeb2">placPion</a> (<a class="el" href="classElemGraph.html">ElemGraph</a> *p, int pos)</td></tr>
+<tr class="memdesc:af190791a86170f3dd476b31cf0c9aeb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place l'element en parametre a la position en parametre, renvoie true si résussi, false sinon.  <a href="#af190791a86170f3dd476b31cf0c9aeb2">Plus de détails...</a><br/></td></tr>
 <tr class="separator:af190791a86170f3dd476b31cf0c9aeb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ddb92e6fdd6d2f1844d09ae3c33c5c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a6ddb92e6fdd6d2f1844d09ae3c33c5c9">placPion</a> (<a class="el" href="classPlayer.html">Player</a> j, int pos)</td></tr>
+<tr class="memdesc:a6ddb92e6fdd6d2f1844d09ae3c33c5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place un pion.  <a href="#a6ddb92e6fdd6d2f1844d09ae3c33c5c9">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a6ddb92e6fdd6d2f1844d09ae3c33c5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad496a2a108e2a99e1c665d3a631a349c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#ad496a2a108e2a99e1c665d3a631a349c">suppPion</a> (int pos)</td></tr>
+<tr class="memdesc:ad496a2a108e2a99e1c665d3a631a349c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un element du plateau, renvoie vrai si supprimer, sinon faux.  <a href="#ad496a2a108e2a99e1c665d3a631a349c">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ad496a2a108e2a99e1c665d3a631a349c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad77db0e3b1d01af4d4950c9aa89bbd10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#ad77db0e3b1d01af4d4950c9aa89bbd10">suppPion</a> (<a class="el" href="classElemGraph.html">ElemGraph</a> *p)</td></tr>
+<tr class="memdesc:ad77db0e3b1d01af4d4950c9aa89bbd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un element du plateau, renvoie vrai si supprimer, sinon faux.  <a href="#ad77db0e3b1d01af4d4950c9aa89bbd10">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ad77db0e3b1d01af4d4950c9aa89bbd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354174db595b71d48a86af99a1f9cf37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a354174db595b71d48a86af99a1f9cf37">dep</a> (<a class="el" href="classElemGraph.html">ElemGraph</a> *p, <a class="el" href="Bordel_8cpp.html#a43a58f0d1ba0692003f8ddf0745a335c">Fonction</a> direction)</td></tr>
+<tr class="memdesc:a354174db595b71d48a86af99a1f9cf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">deplace l'element donné dans la direction donné  <a href="#a354174db595b71d48a86af99a1f9cf37">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a354174db595b71d48a86af99a1f9cf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa0a4040ee5f2cf6ebdf014f8cb2b05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a3fa0a4040ee5f2cf6ebdf014f8cb2b05">dep</a> (int indice, <a class="el" href="Bordel_8cpp.html#a43a58f0d1ba0692003f8ddf0745a335c">Fonction</a> direction)</td></tr>
+<tr class="memdesc:a3fa0a4040ee5f2cf6ebdf014f8cb2b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">deplace l'element a la position donné dans la direction donné  <a href="#a3fa0a4040ee5f2cf6ebdf014f8cb2b05">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a3fa0a4040ee5f2cf6ebdf014f8cb2b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa147ea01e05589a43c21f2573d04075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElemGraph.html">ElemGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#aaa147ea01e05589a43c21f2573d04075">getPion</a> (int indice)</td></tr>
+<tr class="memdesc:aaa147ea01e05589a43c21f2573d04075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie l'element graphique a la position passé en paramètre.  <a href="#aaa147ea01e05589a43c21f2573d04075">Plus de détails...</a><br/></td></tr>
 <tr class="separator:aaa147ea01e05589a43c21f2573d04075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a400da5f3783729417e433db1c22a8539"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a400da5f3783729417e433db1c22a8539">getIndice</a> (<a class="el" href="classElemGraph.html">ElemGraph</a> *p)</td></tr>
+<tr class="memdesc:a400da5f3783729417e433db1c22a8539"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie la position de l'element graphique passé en parametre.  <a href="#a400da5f3783729417e433db1c22a8539">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a400da5f3783729417e433db1c22a8539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a679c6e475d48dd4fad36fe40a8a02b7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a679c6e475d48dd4fad36fe40a8a02b7b">LignePleine</a> (int indice)</td></tr>
+<tr class="memdesc:a679c6e475d48dd4fad36fe40a8a02b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie true si la ligne de l'entier en parametre est remplie de pion de la même couleur.  <a href="#a679c6e475d48dd4fad36fe40a8a02b7b">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a679c6e475d48dd4fad36fe40a8a02b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ef20845e099bd1d6bc1d518352b922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a88ef20845e099bd1d6bc1d518352b922">ColonnePleine</a> (int indice)</td></tr>
+<tr class="memdesc:a88ef20845e099bd1d6bc1d518352b922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie true si la colonne du entier en parametre est remplie de pion de la même couleur.  <a href="#a88ef20845e099bd1d6bc1d518352b922">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a88ef20845e099bd1d6bc1d518352b922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af95fdec7dbe8df0215e254fa295ff771"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMatrice.html">Matrice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#af95fdec7dbe8df0215e254fa295ff771">getMatrice</a> ()</td></tr>
+<tr class="memdesc:af95fdec7dbe8df0215e254fa295ff771"><td class="mdescLeft">&#160;</td><td class="mdescRight">getteur de matriceH de plateau  <a href="#af95fdec7dbe8df0215e254fa295ff771">Plus de détails...</a><br/></td></tr>
 <tr class="separator:af95fdec7dbe8df0215e254fa295ff771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2582dc4f277362d76466bf0602dcaa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#ae2582dc4f277362d76466bf0602dcaa8">notif</a> ()</td></tr>
+<tr class="memdesc:ae2582dc4f277362d76466bf0602dcaa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifie les observers.  <a href="#ae2582dc4f277362d76466bf0602dcaa8">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ae2582dc4f277362d76466bf0602dcaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f297a2c46b5e2cbf799dc281a32a7cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlateau.html#a0f297a2c46b5e2cbf799dc281a32a7cc">add</a> (<a class="el" href="classAffichage.html">Affichage</a> *obs)</td></tr>
 <tr class="separator:a0f297a2c46b5e2cbf799dc281a32a7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +188,14 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de plateau. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a0e6ae72e4d7e9923f996c1247e6a6c8b"></a>
@@ -188,6 +210,14 @@ Membres hérités additionnels</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deconstructeur de plateau. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -213,6 +243,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>ajoute un observer </p>
 
 <p>Implémente <a class="el" href="classSujet.html#a34eaa637b2b5b8a622dac9987a49fe6d">Sujet</a>.</p>
 
@@ -232,12 +263,21 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Renvoie true si la colonne du entier en parametre est remplie de pion de la même couleur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indice</td><td>position que l'on souhaite tester </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un bool </dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_a88ef20845e099bd1d6bc1d518352b922_cgraph.png" border="0" usemap="#classPlateau_a88ef20845e099bd1d6bc1d518352b922_cgraph" alt=""/></div>
 <map name="classPlateau_a88ef20845e099bd1d6bc1d518352b922_cgraph" id="classPlateau_a88ef20845e099bd1d6bc1d518352b922_cgraph">
-<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="264,5,315,32"/><area shape="rect" id="node3" href="classElemGraph.html#a7cb27062ecc0122b60ade0f2479ef714" title="ElemGraph::getColore" alt="" coords="214,56,365,83"/></map>
+<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="264,5,315,32"/><area shape="rect" id="node3" href="classElemGraph.html#a7cb27062ecc0122b60ade0f2479ef714" title="ElemGraph::getColore" alt="" coords="214,56,365,83"/></map>
 </div>
 </p>
 
@@ -267,12 +307,21 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>deplace l'element donné dans la direction donné </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>l'element direction direction a deplacer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_a354174db595b71d48a86af99a1f9cf37_cgraph.png" border="0" usemap="#classPlateau_a354174db595b71d48a86af99a1f9cf37_cgraph" alt=""/></div>
 <map name="classPlateau_a354174db595b71d48a86af99a1f9cf37_cgraph" id="classPlateau_a354174db595b71d48a86af99a1f9cf37_cgraph">
-<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="149,5,200,32"/></map>
+<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="149,5,200,32"/></map>
 </div>
 </p>
 
@@ -302,6 +351,15 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>deplace l'element a la position donné dans la direction donné </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indice</td><td>position de l'element direction direction a deplacer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a400da5f3783729417e433db1c22a8539"></a>
@@ -318,6 +376,15 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>Renvoie la position de l'element graphique passé en parametre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>element dont on veut la position </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>entier, position de p </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="af95fdec7dbe8df0215e254fa295ff771"></a>
@@ -333,12 +400,20 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>getteur de matriceH de plateau </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td>this.matriceH </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_af95fdec7dbe8df0215e254fa295ff771_icgraph.png" border="0" usemap="#classPlateau_af95fdec7dbe8df0215e254fa295ff771_icgraph" alt=""/></div>
 <map name="classPlateau_af95fdec7dbe8df0215e254fa295ff771_icgraph" id="classPlateau_af95fdec7dbe8df0215e254fa295ff771_icgraph">
-<area shape="rect" id="node2" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708" title="AffichageConcret1::\lupdate" alt="" coords="189,5,328,46"/></map>
+<area shape="rect" id="node2" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708" title="affiche le plateau observer " alt="" coords="189,5,328,46"/></map>
 </div>
 </p>
 
@@ -358,6 +433,15 @@ Voici le graphe des appelants de cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>Renvoie l'element graphique a la position passé en paramètre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indice</td><td>position de l'element cherché </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>element graphique a la position indice </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a679c6e475d48dd4fad36fe40a8a02b7b"></a>
@@ -373,6 +457,15 @@ Voici le graphe des appelants de cette fonction :</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Renvoie true si la ligne de l'entier en parametre est remplie de pion de la même couleur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">indice</td><td>position que l'on souhaite tester </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un bool </dd></dl>
 
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
@@ -406,6 +499,14 @@ Voici le graphe d'appel pour cette fonction :</div>
 </table>
 </div><div class="memdoc">
 
+<p>Notifie les observers. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="classSujet.html#a17ace2dbd4b6497739892952ed5a5f9a">Sujet</a>.</p>
 
 </div>
@@ -434,12 +535,21 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>Place l'element en parametre a la position en parametre, renvoie true si résussi, false sinon. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>element a placer pos position a placé </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool </dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_af190791a86170f3dd476b31cf0c9aeb2_cgraph.png" border="0" usemap="#classPlateau_af190791a86170f3dd476b31cf0c9aeb2_cgraph" alt=""/></div>
 <map name="classPlateau_af190791a86170f3dd476b31cf0c9aeb2_cgraph" id="classPlateau_af190791a86170f3dd476b31cf0c9aeb2_cgraph">
-<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="179,5,229,32"/></map>
+<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="179,5,229,32"/></map>
 </div>
 </p>
 
@@ -469,12 +579,21 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>Place un pion. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>propriétaire du pion pos position du pion a deplacer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_a6ddb92e6fdd6d2f1844d09ae3c33c5c9_cgraph.png" border="0" usemap="#classPlateau_a6ddb92e6fdd6d2f1844d09ae3c33c5c9_cgraph" alt=""/></div>
 <map name="classPlateau_a6ddb92e6fdd6d2f1844d09ae3c33c5c9_cgraph" id="classPlateau_a6ddb92e6fdd6d2f1844d09ae3c33c5c9_cgraph">
-<area shape="rect" id="node2" href="classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="Player::getColore" alt="" coords="179,5,301,32"/><area shape="rect" id="node3" href="classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="185,56,295,83"/><area shape="rect" id="node4" href="classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="189,107,291,133"/></map>
+<area shape="rect" id="node2" href="classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="getteur de la couleur " alt="" coords="179,5,301,32"/><area shape="rect" id="node3" href="classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="185,56,295,83"/><area shape="rect" id="node4" href="classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="189,107,291,133"/></map>
 </div>
 </p>
 
@@ -501,6 +620,7 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>supprime un observer </p>
 
 <p>Implémente <a class="el" href="classSujet.html#af10100a48238d1a7266856bcdace6680">Sujet</a>.</p>
 
@@ -520,12 +640,21 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>Supprime un element du plateau, renvoie vrai si supprimer, sinon faux. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>position de l'element a supprimer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool </dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_ad496a2a108e2a99e1c665d3a631a349c_cgraph.png" border="0" usemap="#classPlateau_ad496a2a108e2a99e1c665d3a631a349c_cgraph" alt=""/></div>
 <map name="classPlateau_ad496a2a108e2a99e1c665d3a631a349c_cgraph" id="classPlateau_ad496a2a108e2a99e1c665d3a631a349c_cgraph">
-<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="181,5,232,32"/></map>
+<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="181,5,232,32"/></map>
 </div>
 </p>
 
@@ -545,12 +674,21 @@ Voici le graphe d'appel pour cette fonction :</div>
       </table>
 </div><div class="memdoc">
 
+<p>Supprime un element du plateau, renvoie vrai si supprimer, sinon faux. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>element a supprimer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>bool </dd></dl>
+
 <p><div class="dynheader">
 Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPlateau_ad77db0e3b1d01af4d4950c9aa89bbd10_cgraph.png" border="0" usemap="#classPlateau_ad77db0e3b1d01af4d4950c9aa89bbd10_cgraph" alt=""/></div>
 <map name="classPlateau_ad77db0e3b1d01af4d4950c9aa89bbd10_cgraph" id="classPlateau_ad77db0e3b1d01af4d4950c9aa89bbd10_cgraph">
-<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="conv" alt="" coords="181,5,232,32"/></map>
+<area shape="rect" id="node2" href="Bordel_8cpp.html#a11dc66d2036b8f367ee5e3e9614b2bbd" title="Convertie une position horizontal en position verticale, obliger de faire au cas par cas..." alt="" coords="181,5,232,32"/></map>
 </div>
 </p>
 
@@ -643,7 +781,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:08:00 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:10 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

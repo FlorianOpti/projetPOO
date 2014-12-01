@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['setphase',['setPhase',['../classGame.html#a0ea25b6a4be0cc29888b4a4981e13331',1,'Game']]],
-  ['setpion',['setPion',['../classMatrice.html#aeaaf0f75dd14ed929ffaa71064de0ad0',1,'Matrice']]],
-  ['sujet',['Sujet',['../classSujet.html',1,'Sujet'],['../classSujet.html#a0d6151e8dbf2a29f42ac9af8f1bedc92',1,'Sujet::Sujet()']]],
-  ['supp',['supp',['../classSujet.html#af10100a48238d1a7266856bcdace6680',1,'Sujet::supp()'],['../classPlateau.html#ad7864a8ad74387f2616d1f800df52001',1,'Plateau::supp()']]],
-  ['supppion',['suppPion',['../classPlateau.html#ad496a2a108e2a99e1c665d3a631a349c',1,'Plateau::suppPion(int pos)'],['../classPlateau.html#ad77db0e3b1d01af4d4950c9aa89bbd10',1,'Plateau::suppPion(ElemGraph *p)']]]
+  ['tostring',['toString',['../classElemGraph.html#ac93affa2ea17d3cb8b971609145cf2d0',1,'ElemGraph::toString()'],['../classInterCase.html#a6472b55469b46733c258392d925fa408',1,'InterCase::toString()'],['../classPion.html#a455fb2acb8d9ffd088eda54565dd1a2d',1,'Pion::toString()'],['../classPionN.html#aa347aa0312f84d717a69f2248f5c501b',1,'PionN::toString()'],['../classPionR.html#adddeaea5e63c4f0be505157b8529f349',1,'PionR::toString()'],['../classPionV.html#a2ae70ae1381b39bb8be61fa17b3a7a5d',1,'PionV::toString()'],['../classBarreHoriz.html#a1ce2ed1cef143297ff513afde2d2d03d',1,'BarreHoriz::toString()'],['../classBarreVertic.html#af9e8bb5b53274c69b9c8a43b093aabaa',1,'BarreVertic::toString()'],['../classEspace.html#a9ab807754b615e14fbefcbf9f922bc48',1,'Espace::toString()']]]
 ];

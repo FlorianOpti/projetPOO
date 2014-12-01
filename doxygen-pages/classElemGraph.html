@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -184,6 +184,7 @@ Fonctions membres publiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>affiche l'élément (pour le debug) </p>
 
 <p>Implémenté dans <a class="el" href="classEspace.html#a6bf021e83b1a3e75abc77686a03da824">Espace</a>, <a class="el" href="classBarreVertic.html#a90154a870691fb37684b3240e813f805">BarreVertic</a>, <a class="el" href="classBarreHoriz.html#ad04aaebf59f2c16e6a5d4c6493d326d4">BarreHoriz</a>, <a class="el" href="classPionV.html#a5ee3690a4250822458b3bdd613c1d5f1">PionV</a>, <a class="el" href="classPionR.html#a700bf2676ee8ea1c8e98027a0dcdd47c">PionR</a>, <a class="el" href="classPionN.html#a07083bc1d4477dbdf7b1259980e4af7b">PionN</a>, <a class="el" href="classPion.html#a5e1652ae0412587565253c8e10e748de">Pion</a>, et <a class="el" href="classInterCase.html#a07d93005ffa0027c8e56a16a981b504c">InterCase</a>.</p>
 
@@ -209,6 +210,8 @@ Fonctions membres publiques</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>donne la couleur de l'element </p>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classColore.html">Colore</a> de l'elem </dd></dl>
 
 <p>Implémenté dans <a class="el" href="classEspace.html#ad5a663e9f9ccb11f90b4fa678df390db">Espace</a>, <a class="el" href="classBarreVertic.html#a6eb2a3837c18ddb6381ac41025622e39">BarreVertic</a>, <a class="el" href="classBarreHoriz.html#a1270b044aa00ff51b8003d10afa7f2f1">BarreHoriz</a>, <a class="el" href="classPionV.html#a9c5eb3211b29296a07bb4ee3cf2d76b8">PionV</a>, <a class="el" href="classPionR.html#a37f017581ecc62950433f82e428e887d">PionR</a>, <a class="el" href="classPionN.html#a9e529a90a566c99fddd84bb690ccb820">PionN</a>, et <a class="el" href="classPion.html#a6e5046ed442cea82a044696a4b77ae73">Pion</a>.</p>
 
@@ -217,7 +220,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classElemGraph_a7cb27062ecc0122b60ade0f2479ef714_icgraph.png" border="0" usemap="#classElemGraph_a7cb27062ecc0122b60ade0f2479ef714_icgraph" alt=""/></div>
 <map name="classElemGraph_a7cb27062ecc0122b60ade0f2479ef714_icgraph" id="classElemGraph_a7cb27062ecc0122b60ade0f2479ef714_icgraph">
-<area shape="rect" id="node2" href="classMatrice.html#a502fc912778b891d7fcefef6e34ca96a" title="Matrice::estVide" alt="" coords="227,5,344,32"/><area shape="rect" id="node3" href="classPlateau.html#a679c6e475d48dd4fad36fe40a8a02b7b" title="Plateau::LignePleine" alt="" coords="215,56,356,83"/><area shape="rect" id="node4" href="classPlateau.html#a88ef20845e099bd1d6bc1d518352b922" title="Plateau::ColonnePleine" alt="" coords="206,107,365,133"/></map>
+<area shape="rect" id="node2" href="classMatrice.html#a502fc912778b891d7fcefef6e34ca96a" title="Matrice::estVide" alt="" coords="227,5,344,32"/><area shape="rect" id="node3" href="classPlateau.html#a679c6e475d48dd4fad36fe40a8a02b7b" title="Renvoie true si la ligne de l&#39;entier en parametre est remplie de pion de la même couleur. " alt="" coords="215,56,356,83"/><area shape="rect" id="node4" href="classPlateau.html#a88ef20845e099bd1d6bc1d518352b922" title="Renvoie true si la colonne du entier en parametre est remplie de pion de la même couleur. " alt="" coords="206,107,365,133"/></map>
 </div>
 </p>
 
@@ -243,6 +246,8 @@ Voici le graphe des appelants de cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>transforme l'element graphique en string ( pour l'affichage concret 1) </p>
+<dl class="section return"><dt>Renvoie</dt><dd>une string </dd></dl>
 
 <p>Implémenté dans <a class="el" href="classEspace.html#a9ab807754b615e14fbefcbf9f922bc48">Espace</a>, <a class="el" href="classBarreVertic.html#af9e8bb5b53274c69b9c8a43b093aabaa">BarreVertic</a>, <a class="el" href="classBarreHoriz.html#a1ce2ed1cef143297ff513afde2d2d03d">BarreHoriz</a>, <a class="el" href="classPionV.html#a2ae70ae1381b39bb8be61fa17b3a7a5d">PionV</a>, <a class="el" href="classPionR.html#adddeaea5e63c4f0be505157b8529f349">PionR</a>, <a class="el" href="classPionN.html#aa347aa0312f84d717a69f2248f5c501b">PionN</a>, <a class="el" href="classPion.html#a455fb2acb8d9ffd088eda54565dd1a2d">Pion</a>, et <a class="el" href="classInterCase.html#a6472b55469b46733c258392d925fa408">InterCase</a>.</p>
 
@@ -251,7 +256,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classElemGraph_ac93affa2ea17d3cb8b971609145cf2d0_icgraph.png" border="0" usemap="#classElemGraph_ac93affa2ea17d3cb8b971609145cf2d0_icgraph" alt=""/></div>
 <map name="classElemGraph_ac93affa2ea17d3cb8b971609145cf2d0_icgraph" id="classElemGraph_ac93affa2ea17d3cb8b971609145cf2d0_icgraph">
-<area shape="rect" id="node2" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708" title="AffichageConcret1::\lupdate" alt="" coords="195,5,333,46"/></map>
+<area shape="rect" id="node2" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708" title="affiche le plateau observer " alt="" coords="195,5,333,46"/></map>
 </div>
 </p>
 
@@ -263,7 +268,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:07:59 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:09 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

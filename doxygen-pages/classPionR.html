@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -129,7 +129,9 @@ Membres hérités additionnels</h2></td></tr>
 <tr class="memitem:a29d292ae5324bfbfde1e9ea5bc10004b inherit pro_attribs_classPion"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColore.html">Colore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPion.html#a29d292ae5324bfbfde1e9ea5bc10004b">color</a></td></tr>
 <tr class="separator:a29d292ae5324bfbfde1e9ea5bc10004b inherit pro_attribs_classPion"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>, fille de <a class="el" href="classPion.html">Pion</a>, Element graphique qui est un <a class="el" href="classPion.html">Pion</a> </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
 <a class="anchor" id="a085a431ae277fcffda662cac623ce0f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -150,6 +152,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructeur par défaut qui initialise la couleur a rouge </p>
 
 </div>
 </div>
@@ -197,6 +200,7 @@ Membres hérités additionnels</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>affiche l'élément (pour le debug), sa couleur </p>
 
 <p>Implémente <a class="el" href="classPion.html#a5e1652ae0412587565253c8e10e748de">Pion</a>.</p>
 
@@ -205,7 +209,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classPionR_a700bf2676ee8ea1c8e98027a0dcdd47c_cgraph.png" border="0" usemap="#classPionR_a700bf2676ee8ea1c8e98027a0dcdd47c_cgraph" alt=""/></div>
 <map name="classPionR_a700bf2676ee8ea1c8e98027a0dcdd47c_cgraph" id="classPionR_a700bf2676ee8ea1c8e98027a0dcdd47c_cgraph">
-<area shape="rect" id="node2" href="classColore.html#a7704aebfa19f0f1f0d04bff31755ca16" title="Colore::affichage" alt="" coords="174,31,295,57"/><area shape="rect" id="node3" href="classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="345,5,455,32"/><area shape="rect" id="node4" href="classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="349,56,451,83"/></map>
+<area shape="rect" id="node2" href="classColore.html#a7704aebfa19f0f1f0d04bff31755ca16" title="print N R or 0 depending on the color " alt="" coords="174,31,295,57"/><area shape="rect" id="node3" href="classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="345,5,455,32"/><area shape="rect" id="node4" href="classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="349,56,451,83"/></map>
 </div>
 </p>
 
@@ -231,6 +235,8 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>donne la couleur de l'element </p>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classColore.html">Colore</a> rouge </dd></dl>
 
 <p>Implémente <a class="el" href="classPion.html#a6e5046ed442cea82a044696a4b77ae73">Pion</a>.</p>
 
@@ -256,6 +262,8 @@ Voici le graphe d'appel pour cette fonction :</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>transforme l'element graphique <a class="el" href="classPionR.html">PionR</a> en string ( pour l'affichage concret 1) </p>
+<dl class="section return"><dt>Renvoie</dt><dd>"R" </dd></dl>
 
 <p>Implémente <a class="el" href="classPion.html#a455fb2acb8d9ffd088eda54565dd1a2d">Pion</a>.</p>
 
@@ -267,7 +275,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:08:00 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:10 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

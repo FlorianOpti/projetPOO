@@ -1,8 +1,8 @@
 <map id="Placement::faire_jouer" name="Placement::faire_jouer">
-<area shape="rect" id="node2" href="$classPlayer.html#a6c00760b9ac5a4575851448a864b6bb7" title="Player::affichage" alt="" coords="207,5,327,32"/>
-<area shape="rect" id="node3" href="$classColore.html#a12bf6c7c37eb4f6a7ce12ac65f25f043" title="Colore::isVide" alt="" coords="380,56,484,83"/>
+<area shape="rect" id="node2" href="$classPlayer.html#a6c00760b9ac5a4575851448a864b6bb7" title="Affiche la couleur du joueur puis son nombre de pion. " alt="" coords="207,5,327,32"/>
+<area shape="rect" id="node3" href="$classColore.html#a12bf6c7c37eb4f6a7ce12ac65f25f043" title="getter " alt="" coords="380,56,484,83"/>
 <area shape="rect" id="node4" href="$classColore.html#af2d9d5c207449684283aa697add4d381" title="Colore::isEquals" alt="" coords="207,107,326,133"/>
-<area shape="rect" id="node7" href="$classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="Player::getColore" alt="" coords="205,157,328,184"/>
-<area shape="rect" id="node5" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="381,107,483,133"/>
-<area shape="rect" id="node6" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="377,157,487,184"/>
+<area shape="rect" id="node7" href="$classPlayer.html#a169bb434236c8d1cf7e568aca207f176" title="getteur de la couleur " alt="" coords="205,157,328,184"/>
+<area shape="rect" id="node5" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="381,107,483,133"/>
+<area shape="rect" id="node6" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="377,157,487,184"/>
 </map>

@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,10 +108,13 @@ Graphe de collaboration de FactoryBarre:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:a173c6583f8163584e2467339277a42e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classElemGraph.html">ElemGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFactoryBarre.html#a173c6583f8163584e2467339277a42e9">factoryMethod</a> (std::string type)</td></tr>
+<tr class="memdesc:a173c6583f8163584e2467339277a42e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">retourne un pointeur ver un element graphique barre crée, verticale ou horizontale selon la chaine de caractere en parmaetre  <a href="#a173c6583f8163584e2467339277a42e9">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a173c6583f8163584e2467339277a42e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1df238eb60b6e526dda81ac90ff59259"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFactoryBarre.html#a1df238eb60b6e526dda81ac90ff59259">FactoryBarre</a> ()</td></tr>
+<tr class="memdesc:a1df238eb60b6e526dda81ac90ff59259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de factorybarre.  <a href="#a1df238eb60b6e526dda81ac90ff59259">Plus de détails...</a><br/></td></tr>
 <tr class="separator:a1df238eb60b6e526dda81ac90ff59259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab815851ecef7053079be6000c9ff71dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFactoryBarre.html#ab815851ecef7053079be6000c9ff71dd">~FactoryBarre</a> ()</td></tr>
+<tr class="memdesc:ab815851ecef7053079be6000c9ff71dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deconstructeur de factorybarre.  <a href="#ab815851ecef7053079be6000c9ff71dd">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ab815851ecef7053079be6000c9ff71dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -131,6 +134,14 @@ Membres hérités additionnels</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de factorybarre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="ab815851ecef7053079be6000c9ff71dd"></a>
@@ -145,6 +156,14 @@ Membres hérités additionnels</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deconstructeur de factorybarre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -171,6 +190,15 @@ Membres hérités additionnels</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>retourne un pointeur ver un element graphique barre crée, verticale ou horizontale selon la chaine de caractere en parmaetre </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>type de barre qu'on veut </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>ElemGraph* </dd></dl>
+
 <p>Implémente <a class="el" href="classFactoryGraphique.html#a0795dad177f5d6f3d8321776628825bf">FactoryGraphique</a>.</p>
 
 <p><div class="dynheader">
@@ -178,7 +206,7 @@ Voici le graphe des appelants de cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classFactoryBarre_a173c6583f8163584e2467339277a42e9_icgraph.png" border="0" usemap="#classFactoryBarre_a173c6583f8163584e2467339277a42e9_icgraph" alt=""/></div>
 <map name="classFactoryBarre_a173c6583f8163584e2467339277a42e9_icgraph" id="classFactoryBarre_a173c6583f8163584e2467339277a42e9_icgraph">
-<area shape="rect" id="node2" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708" title="AffichageConcret1::\lupdate" alt="" coords="243,5,381,46"/></map>
+<area shape="rect" id="node2" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708" title="affiche le plateau observer " alt="" coords="243,5,381,46"/></map>
 </div>
 </p>
 
@@ -190,7 +218,7 @@ Voici le graphe des appelants de cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:07:59 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:09 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

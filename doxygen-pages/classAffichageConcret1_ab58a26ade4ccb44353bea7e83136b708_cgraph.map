@@ -1,6 +1,6 @@
 <map id="AffichageConcret1::update" name="AffichageConcret1::update">
-<area shape="rect" id="node2" href="$classPlateau.html#af95fdec7dbe8df0215e254fa295ff771" title="Plateau::getMatrice" alt="" coords="219,5,354,32"/>
-<area shape="rect" id="node3" href="$classFactoryBarre.html#a173c6583f8163584e2467339277a42e9" title="FactoryBarre::factoryMethod" alt="" coords="193,56,381,83"/>
+<area shape="rect" id="node2" href="$classPlateau.html#af95fdec7dbe8df0215e254fa295ff771" title="getteur de matriceH de plateau " alt="" coords="219,5,354,32"/>
+<area shape="rect" id="node3" href="$classFactoryBarre.html#a173c6583f8163584e2467339277a42e9" title="retourne un pointeur ver un element graphique barre crée, verticale ou horizontale selon la chaine de..." alt="" coords="193,56,381,83"/>
 <area shape="rect" id="node4" href="$classMatrice.html#a2dcebb9b659431136c2cb2caa2978930" title="Matrice::pion" alt="" coords="238,107,335,133"/>
 <area shape="rect" id="node5" href="$classElemGraph.html#ac93affa2ea17d3cb8b971609145cf2d0" title="ElemGraph::toString" alt="" coords="217,157,357,184"/>
 </map>

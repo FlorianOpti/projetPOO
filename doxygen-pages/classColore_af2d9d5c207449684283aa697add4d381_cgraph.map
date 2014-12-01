@@ -1,5 +1,5 @@
 <map id="Colore::isEquals" name="Colore::isEquals">
-<area shape="rect" id="node2" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="178,5,281,32"/>
-<area shape="rect" id="node3" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="174,56,285,83"/>
-<area shape="rect" id="node4" href="$classColore.html#a12bf6c7c37eb4f6a7ce12ac65f25f043" title="Colore::isVide" alt="" coords="177,107,281,133"/>
+<area shape="rect" id="node2" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="178,5,281,32"/>
+<area shape="rect" id="node3" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="174,56,285,83"/>
+<area shape="rect" id="node4" href="$classColore.html#a12bf6c7c37eb4f6a7ce12ac65f25f043" title="getter " alt="" coords="177,107,281,133"/>
 </map>

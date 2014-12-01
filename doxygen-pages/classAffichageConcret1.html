@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,10 +109,12 @@ Graphe de collaboration de AffichageConcret1:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr class="memitem:ae71915791e58cc02bd6499b7d1e40ffe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffichageConcret1.html#ae71915791e58cc02bd6499b7d1e40ffe">AffichageConcret1</a> (<a class="el" href="classPlateau.html">Plateau</a> *p)</td></tr>
+<tr class="memdesc:ae71915791e58cc02bd6499b7d1e40ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="classAffichage.html">Affichage</a> Concret, prend le plateau a afficher en parametre.  <a href="#ae71915791e58cc02bd6499b7d1e40ffe">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ae71915791e58cc02bd6499b7d1e40ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1849d5795628cc25448544223097182"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffichageConcret1.html#ae1849d5795628cc25448544223097182">~AffichageConcret1</a> ()</td></tr>
 <tr class="separator:ae1849d5795628cc25448544223097182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab58a26ade4ccb44353bea7e83136b708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffichageConcret1.html#ab58a26ade4ccb44353bea7e83136b708">update</a> ()</td></tr>
+<tr class="memdesc:ab58a26ade4ccb44353bea7e83136b708"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche le plateau observer  <a href="#ab58a26ade4ccb44353bea7e83136b708">Plus de détails...</a><br/></td></tr>
 <tr class="separator:ab58a26ade4ccb44353bea7e83136b708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAffichage"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAffichage')"><img src="closed.png" alt="-"/>&#160;Fonctions membres publiques hérités de <a class="el" href="classAffichage.html">Affichage</a></td></tr>
 <tr class="memitem:a5956d12aebf4355a052d8a0eec9ad116 inherit pub_methods_classAffichage"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAffichage.html#a5956d12aebf4355a052d8a0eec9ad116">Affichage</a> ()</td></tr>
@@ -149,6 +151,15 @@ Attributs privés</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructeur de <a class="el" href="classAffichage.html">Affichage</a> Concret, prend le plateau a afficher en parametre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>plateau aa afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -197,6 +208,14 @@ Attributs privés</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>affiche le plateau observer </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">\return</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implémente <a class="el" href="classAffichage.html#a736a2186db0344664d797df682e3ae83">Affichage</a>.</p>
 
 <p><div class="dynheader">
@@ -204,7 +223,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 <div class="dyncontent">
 <div class="center"><img src="classAffichageConcret1_ab58a26ade4ccb44353bea7e83136b708_cgraph.png" border="0" usemap="#classAffichageConcret1_ab58a26ade4ccb44353bea7e83136b708_cgraph" alt=""/></div>
 <map name="classAffichageConcret1_ab58a26ade4ccb44353bea7e83136b708_cgraph" id="classAffichageConcret1_ab58a26ade4ccb44353bea7e83136b708_cgraph">
-<area shape="rect" id="node2" href="classPlateau.html#af95fdec7dbe8df0215e254fa295ff771" title="Plateau::getMatrice" alt="" coords="219,5,354,32"/><area shape="rect" id="node3" href="classFactoryBarre.html#a173c6583f8163584e2467339277a42e9" title="FactoryBarre::factoryMethod" alt="" coords="193,56,381,83"/><area shape="rect" id="node4" href="classMatrice.html#a2dcebb9b659431136c2cb2caa2978930" title="Matrice::pion" alt="" coords="238,107,335,133"/><area shape="rect" id="node5" href="classElemGraph.html#ac93affa2ea17d3cb8b971609145cf2d0" title="ElemGraph::toString" alt="" coords="217,157,357,184"/></map>
+<area shape="rect" id="node2" href="classPlateau.html#af95fdec7dbe8df0215e254fa295ff771" title="getteur de matriceH de plateau " alt="" coords="219,5,354,32"/><area shape="rect" id="node3" href="classFactoryBarre.html#a173c6583f8163584e2467339277a42e9" title="retourne un pointeur ver un element graphique barre crée, verticale ou horizontale selon la chaine de..." alt="" coords="193,56,381,83"/><area shape="rect" id="node4" href="classMatrice.html#a2dcebb9b659431136c2cb2caa2978930" title="Matrice::pion" alt="" coords="238,107,335,133"/><area shape="rect" id="node5" href="classElemGraph.html#ac93affa2ea17d3cb8b971609145cf2d0" title="ElemGraph::toString" alt="" coords="217,157,357,184"/></map>
 </div>
 </p>
 
@@ -257,7 +276,7 @@ Voici le graphe d'appel pour cette fonction :</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:07:59 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:09 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

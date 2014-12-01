@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,7 +86,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
   <div class="summary">
 <a href="#pub-methods">Fonctions membres publiques</a> &#124;
 <a href="#pro-attribs">Attributs protégés</a> &#124;
-<a href="#friends">Amis</a> &#124;
 <a href="classPion-members.html">Liste de tous les membres</a>  </div>
   <div class="headertitle">
 <div class="title">Référence de la classe Pion<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -125,11 +124,6 @@ Fonctions membres publiques</h2></td></tr>
 Attributs protégés</h2></td></tr>
 <tr class="memitem:a29d292ae5324bfbfde1e9ea5bc10004b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColore.html">Colore</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPion.html#a29d292ae5324bfbfde1e9ea5bc10004b">color</a></td></tr>
 <tr class="separator:a29d292ae5324bfbfde1e9ea5bc10004b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Amis</h2></td></tr>
-<tr class="memitem:aab3cfebd8c540a7a242164d4d4384912"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPion.html#aab3cfebd8c540a7a242164d4d4384912">ElemGraph</a></td></tr>
-<tr class="separator:aab3cfebd8c540a7a242164d4d4384912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentation des fonctions membres</h2>
 <a class="anchor" id="a5e1652ae0412587565253c8e10e748de"></a>
@@ -152,6 +146,7 @@ Amis</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>affiche l'élément (pour le debug) </p>
 
 <p>Implémente <a class="el" href="classElemGraph.html#a0ef92902ac7035eded49cb6893d38f71">ElemGraph</a>.</p>
 
@@ -179,6 +174,8 @@ Amis</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>donne la couleur de l'element </p>
+<dl class="section return"><dt>Renvoie</dt><dd><a class="el" href="classColore.html">Colore</a> de l'elem </dd></dl>
 
 <p>Implémente <a class="el" href="classElemGraph.html#a7cb27062ecc0122b60ade0f2479ef714">ElemGraph</a>.</p>
 
@@ -206,31 +203,12 @@ Amis</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>transforme l'element graphique <a class="el" href="classPion.html">Pion</a> en string ( pour l'affichage concret 1) </p>
+<dl class="section return"><dt>Renvoie</dt><dd>une string </dd></dl>
 
 <p>Implémente <a class="el" href="classElemGraph.html#ac93affa2ea17d3cb8b971609145cf2d0">ElemGraph</a>.</p>
 
 <p>Implémenté dans <a class="el" href="classPionV.html#a2ae70ae1381b39bb8be61fa17b3a7a5d">PionV</a>, <a class="el" href="classPionR.html#adddeaea5e63c4f0be505157b8529f349">PionR</a>, et <a class="el" href="classPionN.html#aa347aa0312f84d717a69f2248f5c501b">PionN</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Documentation des fonctions amies et associées</h2>
-<a class="anchor" id="aab3cfebd8c540a7a242164d4d4384912"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classElemGraph.html">ElemGraph</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -261,7 +239,7 @@ Amis</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Généré le Lundi 1 Décembre 2014 18:07:59 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Lundi 1 Décembre 2014 18:50:10 pour JeuduMoulin par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

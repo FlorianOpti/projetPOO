@@ -1,5 +1,5 @@
 <map id="PionV::affichage" name="PionV::affichage">
-<area shape="rect" id="node2" href="$classColore.html#a7704aebfa19f0f1f0d04bff31755ca16" title="Colore::affichage" alt="" coords="174,31,295,57"/>
-<area shape="rect" id="node3" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="Colore::isBlack" alt="" coords="345,5,455,32"/>
-<area shape="rect" id="node4" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="Colore::isRed" alt="" coords="349,56,451,83"/>
+<area shape="rect" id="node2" href="$classColore.html#a7704aebfa19f0f1f0d04bff31755ca16" title="print N R or 0 depending on the color " alt="" coords="174,31,295,57"/>
+<area shape="rect" id="node3" href="$classColore.html#a8a395ea845d1034ffa6c4268bbc49e51" title="getter " alt="" coords="345,5,455,32"/>
+<area shape="rect" id="node4" href="$classColore.html#aed6aad53f4fd194eb018639b7f14d1b3" title="getter " alt="" coords="349,56,451,83"/>
 </map>
