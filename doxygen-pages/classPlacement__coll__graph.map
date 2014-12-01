@@ -1,0 +1,15 @@
+<map id="Placement" name="Placement">
+<area shape="rect" id="node3" href="$classGame.html" title="{Game\n||+ Play()\l+ Game()\l+ play()\l+ getJ1()\l+ getJ2()\l+ getPlateau()\l+ getPhaseDeplacement()\l+ getPhaseFinduJeu()\l+ setPhase()\l}" alt="" coords="119,907,293,1101"/>
+<area shape="rect" id="node2" href="$classPhase.html" title="{Phase\n||+ jouer()\l+ Phase()\l+ ~Phase()\l+ Phase()\l}" alt="" coords="163,1166,249,1287"/>
+<area shape="rect" id="node4" href="$classFinduJeu.html" title="{FinduJeu\n||+ jouer()\l+ FinduJeu()\l}" alt="" coords="42,1346,136,1438"/>
+<area shape="rect" id="node12" href="$classDeplacement.html" title="{Deplacement\n||+ jouer()\l+ faire_jouer()\l+ Deplacement()\l}" alt="" coords="211,1339,329,1445"/>
+<area shape="rect" id="node5" href="$classPlateau.html" title="{Plateau\n||+ Plateau()\l+ ~Plateau()\l+ placPion()\l+ placPion()\l+ suppPion()\l+ suppPion()\l+ dep()\l+ dep()\l+ getPion()\l+ getIndice()\let 6 de plus...\l}" alt="" coords="194,605,296,829"/>
+<area shape="rect" id="node6" href="$classSujet.html" title="{Sujet\n||+ Sujet()\l+ ~Sujet()\l+ notif()\l+ add()\l+ supp()\l}" alt="" coords="87,363,165,499"/>
+<area shape="rect" id="node7" href="$classFactoryPion.html" title="{FactoryPion\n||+ factoryMethod()\l+ FactoryPion()\l+ ~FactoryPion()\l}" alt="" coords="5,148,131,255"/>
+<area shape="rect" id="node10" href="$classMatrice.html" title="{Matrice\n||+ Matrice()\l+ ~Matrice()\l+ setPion()\l+ estVide()\l+ indice()\l+ pion()\l+ LignePleine()\l}" alt="" coords="191,348,300,513"/>
+<area shape="rect" id="node8" href="$classFactoryGraphique.html" title="{FactoryGraphique\n||+ factoryMethod()\l}" alt="" coords="5,5,131,83"/>
+<area shape="rect" id="node9" href="$classAffichage.html" title="{Affichage\n||+ Affichage()\l+ ~Affichage()\l+ update()\l}" alt="" coords="325,377,429,484"/>
+<area shape="rect" id="node11" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="188,133,303,269"/>
+<area shape="rect" id="node13" href="$classPlayer.html" title="{Player\n|# nbPion\l|+ ~Player()\l+ Player()\l+ Player()\l+ affichage()\l+ getNbPion()\l+ perdrePion()\l+ getColore()\l}" alt="" coords="411,635,515,800"/>
+<area shape="rect" id="node14" href="$classColore.html" title="{Colore\n|# estNoir\l# estRouge\l|+ Colore()\l+ ~Colore()\l+ Colore()\l+ isBlack()\l+ isRed()\l+ isVide()\l+ affichage()\l+ isEquals()\l}" alt="" coords="454,333,548,528"/>
+</map>

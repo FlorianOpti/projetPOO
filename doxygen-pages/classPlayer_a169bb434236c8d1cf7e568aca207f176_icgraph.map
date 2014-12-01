@@ -1,0 +1,5 @@
+<map id="Player::getColore" name="Player::getColore">
+<area shape="rect" id="node2" href="$classPlateau.html#a6ddb92e6fdd6d2f1844d09ae3c33c5c9" title="Plateau::placPion" alt="" coords="190,5,314,32"/>
+<area shape="rect" id="node3" href="$classDeplacement.html#a21239e3b70405edc2b248504b7bba5a0" title="description " alt="" coords="186,57,318,98"/>
+<area shape="rect" id="node4" href="$classPlacement.html#a5229ed32ecadbb3983bbbd82d1ab04de" title="Placement::faire_jouer" alt="" coords="176,123,328,149"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="AffichageConcret1" name="AffichageConcret1">
+<area shape="rect" id="node2" href="$classAffichage.html" title="{Affichage\n||+ Affichage()\l+ ~Affichage()\l+ update()\l}" alt="" coords="91,453,196,560"/>
+<area shape="rect" id="node5" href="$classPlateau.html" title="{Plateau\n||+ Plateau()\l+ ~Plateau()\l+ placPion()\l+ placPion()\l+ suppPion()\l+ suppPion()\l+ dep()\l+ dep()\l+ getPion()\l+ getIndice()\let 6 de plus...\l}" alt="" coords="225,667,327,891"/>
+<area shape="rect" id="node3" href="$classFactoryBarre.html" title="{FactoryBarre\n||+ factoryMethod()\l+ FactoryBarre()\l+ ~FactoryBarre()\l}" alt="" coords="5,293,131,400"/>
+<area shape="rect" id="node4" href="$classFactoryGraphique.html" title="{FactoryGraphique\n||+ factoryMethod()\l}" alt="" coords="105,5,231,83"/>
+<area shape="rect" id="node7" href="$classFactoryPion.html" title="{FactoryPion\n||+ factoryMethod()\l+ FactoryPion()\l+ ~FactoryPion()\l}" alt="" coords="288,148,413,255"/>
+<area shape="rect" id="node6" href="$classSujet.html" title="{Sujet\n||+ Sujet()\l+ ~Sujet()\l+ notif()\l+ add()\l+ supp()\l}" alt="" coords="432,439,511,575"/>
+<area shape="rect" id="node8" href="$classMatrice.html" title="{Matrice\n||+ Matrice()\l+ ~Matrice()\l+ setPion()\l+ estVide()\l+ indice()\l+ pion()\l+ LignePleine()\l}" alt="" coords="221,424,331,589"/>
+<area shape="rect" id="node9" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="149,133,264,269"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Colore::affichage" name="Colore::affichage">
+<area shape="rect" id="node2" href="$classPionN.html#a07083bc1d4477dbdf7b1259980e4af7b" title="PionN::affichage" alt="" coords="177,5,295,32"/>
+<area shape="rect" id="node3" href="$classPionR.html#a700bf2676ee8ea1c8e98027a0dcdd47c" title="PionR::affichage" alt="" coords="177,56,295,83"/>
+<area shape="rect" id="node4" href="$classPionV.html#a5ee3690a4250822458b3bdd613c1d5f1" title="PionV::affichage" alt="" coords="177,107,295,133"/>
+</map>

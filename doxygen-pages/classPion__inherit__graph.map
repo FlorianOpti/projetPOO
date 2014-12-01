@@ -1,0 +1,6 @@
+<map id="Pion" name="Pion">
+<area shape="rect" id="node3" href="$classPionN.html" title="{PionN\n||+ PionN()\l+ ~PionN()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="5,344,104,480"/>
+<area shape="rect" id="node4" href="$classPionR.html" title="{PionR\n||+ PionR()\l+ ~PionR()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="128,344,227,480"/>
+<area shape="rect" id="node5" href="$classPionV.html" title="{PionV\n||+ PionV()\l+ ~PionV()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="251,344,349,480"/>
+<area shape="rect" id="node2" href="$classElemGraph.html" title="{ElemGraph\n||+ ElemGraph()\l+ ~ElemGraph()\l+ getColore()\l+ affichage()\l+ toString()\l}" alt="" coords="120,5,235,141"/>
+</map>

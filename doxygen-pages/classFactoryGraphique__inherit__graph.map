@@ -1,0 +1,4 @@
+<map id="FactoryGraphique" name="FactoryGraphique">
+<area shape="rect" id="node2" href="$classFactoryBarre.html" title="{FactoryBarre\n||+ factoryMethod()\l+ FactoryBarre()\l+ ~FactoryBarre()\l}" alt="" coords="5,131,131,237"/>
+<area shape="rect" id="node3" href="$classFactoryPion.html" title="{FactoryPion\n||+ factoryMethod()\l+ FactoryPion()\l+ ~FactoryPion()\l}" alt="" coords="155,131,280,237"/>
+</map>
